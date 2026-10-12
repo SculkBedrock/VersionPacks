@@ -1,0 +1,281 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:chicken",
+      "is_experimental": false,
+      "is_summonable": true,
+      "is_spawnable": true,
+      "spawn_category": "creature"
+    },
+    "components": {
+      "minecraft:balloonable": {
+        "mass": 0.5
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "look_time": {
+          "min": 1,
+          "max": 2
+        },
+        "look_distance": 6,
+        "priority": 7
+      },
+      "minecraft:behavior.mount_pathing": {
+        "priority": 2,
+        "target_dist": 0.0,
+        "speed_multiplier": 1.5,
+        "track_target": true
+      },
+      "minecraft:behavior.panic": {
+        "damage_sources": [
+          "all"
+        ],
+        "priority": 1,
+        "speed_multiplier": 1.5
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.tempt": {
+        "items": [
+          "wheat_seeds",
+          "beetroot_seeds",
+          "melon_seeds",
+          "pumpkin_seeds"
+        ],
+        "priority": 4,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:breathable": {
+        "suffocate_time": 0,
+        "total_supply": 15
+      },
+      "minecraft:can_climb": {},
+      "minecraft:collision_box": {
+        "height": 0.8,
+        "width": 0.6
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": "no"
+        }
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:health": {
+        "max": 4,
+        "value": 4
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "cause": "lava",
+            "damage_per_tick": 4,
+            "filters": {
+              "operator": "==",
+              "test": "in_lava",
+              "subject": "self",
+              "value": true
+            }
+          }
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:jump.static": {},
+      "minecraft:leashable": {
+        "can_be_cut": false,
+        "can_be_stolen": false,
+        "on_unleash_interact_only": true,
+        "presets": [
+          {
+            "hard_distance": 6.0,
+            "max_distance": 10.0,
+            "spring_type": "bouncy",
+            "soft_distance": 4.0
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:nameable": {},
+      "minecraft:navigation.walk": {
+        "avoid_damage_blocks": true,
+        "can_path_over_water": true,
+        "using_door_annotation": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "chicken",
+          "mob"
+        ]
+      }
+    },
+    "component_groups": {
+      "minecraft:chicken_adult": {
+        "minecraft:behavior.breed": {
+          "priority": 3
+        },
+        "minecraft:breedable": {
+          "breed_items": [
+            {
+              "item": "wheat_seeds"
+            },
+            {
+              "item": "beetroot_seeds"
+            },
+            {
+              "item": "melon_seeds"
+            },
+            {
+              "item": "pumpkin_seeds"
+            }
+          ],
+          "breeds_with": {
+            "minecraft:chicken": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "require_tame": false
+        },
+        "minecraft:experience_reward": {
+          "on_bred": {
+            "expression": "Math.Random(1,7)",
+            "version": 1
+          },
+          "on_death": {
+            "expression": "query.last_hit_by_player ? Math.Random(1,3) : 0",
+            "version": 1
+          }
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/chicken.json"
+        },
+        "minecraft:offspring": {
+          "offspring_pairs": {
+            "minecraft:chicken": "minecraft:chicken"
+          }
+        },
+        "minecraft:rideable": {
+          "family_types": [
+            "zombie"
+          ],
+          "seat_count": 1,
+          "seats": {
+            "position": [
+              0.0,
+              0.4,
+              0.0
+            ]
+          }
+        },
+        "minecraft:spawn_entity": {
+          "entities": {
+            "filters": {
+              "operator": "==",
+              "test": "rider_count",
+              "subject": "self",
+              "value": 0
+            },
+            "spawn_sound": "plop",
+            "max_wait_time": 600,
+            "min_wait_time": 300,
+            "spawn_item": "egg"
+          }
+        }
+      },
+      "minecraft:chicken_baby": {
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            "wheat_seeds",
+            "beetroot_seeds",
+            "melon_seeds",
+            "pumpkin_seeds"
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 5,
+          "speed_multiplier": 1.1
+        },
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        }
+      }
+    },
+    "events": {
+      "from_egg": {
+        "add": {
+          "component_groups": [
+            "minecraft:chicken_baby"
+          ]
+        }
+      },
+      "minecraft:ageable_grow_up": {
+        "add": {
+          "component_groups": [
+            "minecraft:chicken_adult"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:chicken_baby"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "minecraft:chicken_baby"
+          ]
+        },
+        "remove": {}
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "trigger": "minecraft:spawn_adult",
+            "weight": 95
+          },
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:chicken_baby"
+              ]
+            },
+            "weight": 5
+          }
+        ]
+      },
+      "minecraft:spawn_adult": {
+        "add": {
+          "component_groups": [
+            "minecraft:chicken_adult"
+          ]
+        }
+      }
+    }
+  }
+}

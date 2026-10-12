@@ -1,0 +1,138 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:nether_wart",
+      "states": {
+        "age": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:nether_wart','age') == 3",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:nether_wart",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 2,
+                    "chance": 0.3333333333333333
+                  },
+                  {
+                    "value": 3,
+                    "chance": 0.3333333333333333
+                  },
+                  {
+                    "value": 4,
+                    "chance": 0.3333333333333333
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:nether_wart','age') == 0",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:nether_wart",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:nether_wart','age') == 1",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:nether_wart",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:nether_wart','age') == 2",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:nether_wart",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "sc:default_state": {
+      "age": 0
+    },
+    "sc:protocol_runtime_ids": [
+      15936,
+      15937,
+      15938,
+      15939
+    ]
+  }
+}

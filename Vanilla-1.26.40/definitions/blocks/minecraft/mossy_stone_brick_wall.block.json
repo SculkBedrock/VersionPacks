@@ -1,0 +1,299 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:mossy_stone_brick_wall",
+      "states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 1.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 1.5,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": true,
+        "mode": "independent",
+        "entries": [
+          {
+            "item": "minecraft:mossy_stone_brick_wall",
+            "chance": 1.0,
+            "count": [
+              {
+                "value": 1,
+                "chance": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "wall_connection_type_east": "none",
+      "wall_connection_type_north": "none",
+      "wall_connection_type_south": "none",
+      "wall_connection_type_west": "none",
+      "wall_post_bit": false
+    },
+    "sc:protocol_runtime_ids": [
+      17062,
+      17063,
+      17116,
+      17117,
+      17170,
+      17171,
+      17080,
+      17081,
+      17134,
+      17135,
+      17188,
+      17189,
+      17098,
+      17099,
+      17152,
+      17153,
+      17206,
+      17207,
+      17064,
+      17065,
+      17118,
+      17119,
+      17172,
+      17173,
+      17082,
+      17083,
+      17136,
+      17137,
+      17190,
+      17191,
+      17100,
+      17101,
+      17154,
+      17155,
+      17208,
+      17209,
+      17066,
+      17067,
+      17120,
+      17121,
+      17174,
+      17175,
+      17084,
+      17085,
+      17138,
+      17139,
+      17192,
+      17193,
+      17102,
+      17103,
+      17156,
+      17157,
+      17210,
+      17211,
+      17068,
+      17069,
+      17122,
+      17123,
+      17176,
+      17177,
+      17086,
+      17087,
+      17140,
+      17141,
+      17194,
+      17195,
+      17104,
+      17105,
+      17158,
+      17159,
+      17212,
+      17213,
+      17070,
+      17071,
+      17124,
+      17125,
+      17178,
+      17179,
+      17088,
+      17089,
+      17142,
+      17143,
+      17196,
+      17197,
+      17106,
+      17107,
+      17160,
+      17161,
+      17214,
+      17215,
+      17072,
+      17073,
+      17126,
+      17127,
+      17180,
+      17181,
+      17090,
+      17091,
+      17144,
+      17145,
+      17198,
+      17199,
+      17108,
+      17109,
+      17162,
+      17163,
+      17216,
+      17217,
+      17074,
+      17075,
+      17128,
+      17129,
+      17182,
+      17183,
+      17092,
+      17093,
+      17146,
+      17147,
+      17200,
+      17201,
+      17110,
+      17111,
+      17164,
+      17165,
+      17218,
+      17219,
+      17076,
+      17077,
+      17130,
+      17131,
+      17184,
+      17185,
+      17094,
+      17095,
+      17148,
+      17149,
+      17202,
+      17203,
+      17112,
+      17113,
+      17166,
+      17167,
+      17220,
+      17221,
+      17078,
+      17079,
+      17132,
+      17133,
+      17186,
+      17187,
+      17096,
+      17097,
+      17150,
+      17151,
+      17204,
+      17205,
+      17114,
+      17115,
+      17168,
+      17169,
+      17222,
+      17223
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:element_constructor",
+      "states": {
+        "direction": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {},
+    "permutations": [],
+    "sc:default_state": {
+      "direction": 0
+    },
+    "sc:protocol_runtime_ids": [
+      7730,
+      7731,
+      7732,
+      7733
+    ]
+  }
+}

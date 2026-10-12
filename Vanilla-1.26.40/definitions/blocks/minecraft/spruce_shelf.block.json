@@ -1,0 +1,101 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:spruce_shelf",
+      "states": {
+        "minecraft:cardinal_direction": [
+          "east",
+          "north",
+          "south",
+          "west"
+        ],
+        "powered_bit": [
+          false,
+          true
+        ],
+        "powered_shelf_type": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 2.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 2.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": true,
+        "mode": "independent",
+        "entries": [
+          {
+            "item": "minecraft:spruce_shelf",
+            "chance": 1.0,
+            "count": [
+              {
+                "value": 1,
+                "chance": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "minecraft:cardinal_direction": "south",
+      "powered_bit": false,
+      "powered_shelf_type": 0
+    },
+    "sc:protocol_runtime_ids": [
+      5595,
+      5599,
+      5603,
+      5607,
+      5611,
+      5615,
+      5619,
+      5623,
+      5594,
+      5598,
+      5602,
+      5606,
+      5610,
+      5614,
+      5618,
+      5622,
+      5592,
+      5596,
+      5600,
+      5604,
+      5608,
+      5612,
+      5616,
+      5620,
+      5593,
+      5597,
+      5601,
+      5605,
+      5609,
+      5613,
+      5617,
+      5621
+    ]
+  }
+}

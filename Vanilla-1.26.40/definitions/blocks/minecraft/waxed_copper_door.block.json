@@ -1,0 +1,162 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:waxed_copper_door",
+      "states": {
+        "door_hinge_bit": [
+          false,
+          true
+        ],
+        "minecraft:cardinal_direction": [
+          "east",
+          "north",
+          "south",
+          "west"
+        ],
+        "open_bit": [
+          false,
+          true
+        ],
+        "upper_block_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 3.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 3.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": false,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": false,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": true,
+        "mode": "independent",
+        "entries": [
+          {
+            "item": "minecraft:waxed_copper_door",
+            "chance": 1.0,
+            "count": [
+              {
+                "value": 1,
+                "chance": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "door_hinge_bit": false,
+      "minecraft:cardinal_direction": "south",
+      "open_bit": false,
+      "upper_block_bit": false
+    },
+    "sc:protocol_runtime_ids": [
+      15969,
+      15977,
+      15973,
+      15981,
+      15968,
+      15976,
+      15972,
+      15980,
+      15966,
+      15974,
+      15970,
+      15978,
+      15967,
+      15975,
+      15971,
+      15979,
+      15985,
+      15993,
+      15989,
+      15997,
+      15984,
+      15992,
+      15988,
+      15996,
+      15982,
+      15990,
+      15986,
+      15994,
+      15983,
+      15991,
+      15987,
+      15995
+    ]
+  }
+}

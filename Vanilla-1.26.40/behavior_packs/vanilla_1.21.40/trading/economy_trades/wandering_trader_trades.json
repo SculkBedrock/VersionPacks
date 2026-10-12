@@ -1,0 +1,1268 @@
+{
+  "format_version": "1.26.10",
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 5,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 2,
+                        "max": 2
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:sea_pickle",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 5
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 4,
+                        "max": 4
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:slime_ball",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 5
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 2,
+                        "max": 2
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:glowstone",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 5
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 5,
+                        "max": 5
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:nautilus_shell",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 5
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:fern",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:reeds",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 8
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:pumpkin",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 4
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:kelp",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:cactus",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 8
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:dandelion",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:poppy",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:blue_orchid",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 8
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:allium",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:azure_bluet",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:red_tulip",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:orange_tulip",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:white_tulip",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:pink_tulip",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:oxeye_daisy",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:cornflower",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:lily_of_the_valley",
+                      "functions": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:wheat_seeds",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:beetroot_seeds",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:pumpkin_seeds",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:melon_seeds",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 5,
+                        "max": 5
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:oak_sapling",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:spruce_sapling",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:birch_sapling",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:jungle_sapling",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:acacia_sapling",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:dark_oak_sapling",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:cherry_sapling",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:mangrove_propagule",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 8,
+              "weight": 6
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:red_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:white_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:blue_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:pink_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:black_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:green_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:light_gray_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:magenta_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:yellow_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:gray_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:purple_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:light_blue_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:lime_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:orange_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:brown_dye",
+                      "functions": []
+                    },
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:cyan_dye",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12,
+              "weight": 16
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:tube_coral_block",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:brain_coral_block",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:bubble_coral_block",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:fire_coral_block",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:horn_coral_block",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 8,
+              "weight": 5
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:vine",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:brown_mushroom",
+                      "functions": []
+                    },
+                    {
+                      "item": "minecraft:red_mushroom",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 12,
+              "weight": 2
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 2,
+                        "max": 2
+                      },
+                      "item": "minecraft:waterlily",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 5
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 2,
+                        "max": 2
+                      },
+                      "item": "minecraft:small_dripleaf_block",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 5
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 8,
+                        "max": 8
+                      },
+                      "item": "minecraft:sand",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 8
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 4,
+                        "max": 4
+                      },
+                      "item": "minecraft:red_sand",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 6
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 2,
+                        "max": 2
+                      },
+                      "item": "minecraft:pointed_dripstone",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 5
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 2,
+                        "max": 2
+                      },
+                      "item": "minecraft:dirt_with_roots",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 5
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 2,
+                        "max": 2
+                      },
+                      "item": "minecraft:moss_block",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 5
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 5,
+                        "max": 5
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:bucket:4",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 4
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 5,
+                        "max": 5
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:bucket:5",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 4
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:packed_ice",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 6
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 6,
+                        "max": 6
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:blue_ice",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 6
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "minecraft:gunpowder",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 8
+            },
+            {
+              "wants": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:emerald",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "quantity": {
+                        "min": 3,
+                        "max": 3
+                      },
+                      "item": "minecraft:podzol",
+                      "functions": []
+                    }
+                  ]
+                }
+              ],
+              "max_uses": 6
+            }
+          ]
+        }
+      ],
+      "total_exp_required": 0
+    }
+  ]
+}

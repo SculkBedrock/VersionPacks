@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:powered_comparator",
+      "states": {
+        "minecraft:cardinal_direction": [
+          "east",
+          "north",
+          "south",
+          "west"
+        ],
+        "output_lit_bit": [
+          false,
+          true
+        ],
+        "output_subtract_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": true,
+        "mode": "independent",
+        "entries": [
+          {
+            "item": "minecraft:powered_comparator",
+            "chance": 1.0,
+            "count": [
+              {
+                "value": 1,
+                "chance": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "minecraft:cardinal_direction": "south",
+      "output_lit_bit": false,
+      "output_subtract_bit": false
+    },
+    "sc:protocol_runtime_ids": [
+      2004,
+      2008,
+      2012,
+      2016,
+      2003,
+      2007,
+      2011,
+      2015,
+      2001,
+      2005,
+      2009,
+      2013,
+      2002,
+      2006,
+      2010,
+      2014
+    ]
+  }
+}

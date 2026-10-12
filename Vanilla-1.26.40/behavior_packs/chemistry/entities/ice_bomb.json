@@ -1,0 +1,44 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:ice_bomb",
+      "is_experimental": false,
+      "is_summonable": false,
+      "is_spawnable": false,
+      "spawn_category": "misc"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "height": 0.25,
+        "width": 0.25
+      },
+      "minecraft:physics": {},
+      "minecraft:projectile": {
+        "angle_offset": 0.0,
+        "on_hit": {
+          "freeze_on_hit": {
+            "shape": "cube",
+            "size": 1.1,
+            "snap_to_block": true
+          },
+          "impact_damage": null,
+          "particle_on_hit": {
+            "num_particles": 6,
+            "on_other_hit": true,
+            "on_entity_hit": true,
+            "particle_type": "snowballpoof"
+          },
+          "remove_on_hit": {}
+        },
+        "gravity": 0.025,
+        "hit_sound": "icebomb.hit",
+        "hit_water": true,
+        "power": 1.5,
+        "inertia": 1,
+        "liquid_inertia": 1
+      }
+    },
+    "events": null
+  }
+}

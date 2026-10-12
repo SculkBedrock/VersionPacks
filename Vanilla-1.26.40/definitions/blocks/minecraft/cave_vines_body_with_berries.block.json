@@ -1,0 +1,105 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:cave_vines_body_with_berries",
+      "states": {
+        "growing_plant_age": [
+          0,
+          1,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          2,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": true,
+        "mode": "independent",
+        "entries": [
+          {
+            "item": "minecraft:glow_berries",
+            "chance": 1.0,
+            "count": [
+              {
+                "value": 1,
+                "chance": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "growing_plant_age": 0
+    },
+    "sc:protocol_runtime_ids": [
+      12103,
+      12104,
+      12113,
+      12114,
+      12115,
+      12116,
+      12117,
+      12118,
+      12119,
+      12120,
+      12121,
+      12122,
+      12105,
+      12123,
+      12124,
+      12125,
+      12126,
+      12127,
+      12128,
+      12106,
+      12107,
+      12108,
+      12109,
+      12110,
+      12111,
+      12112
+    ]
+  }
+}

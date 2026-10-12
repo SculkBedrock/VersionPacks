@@ -1,0 +1,130 @@
+{
+    "minecraft:absorption": {
+        "min_value": 0.0,
+        "max_value": 340282346638528859811704183484516925440.0,
+        "default_min_value": 0.0,
+        "default_max_value": 340282346638528859811704183484516925440.0,
+        "default_value": 0.0,
+        "should_send": true
+    },
+    "minecraft:player.saturation": {
+        "min_value": 0.0,
+        "max_value": 20.0,
+        "default_min_value": 0.0,
+        "default_max_value": 20.0,
+        "default_value": 5.0,
+        "should_send": true
+    },
+    "minecraft:player.exhaustion": {
+        "min_value": 0.0,
+        "max_value": 5.0,
+        "default_min_value": 0.0,
+        "default_max_value": 5.0,
+        "default_value": 0.41,
+        "should_send": true
+    },
+    "minecraft:knockback_resistance": {
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "default_min_value": 0.0,
+        "default_max_value": 1.0,
+        "default_value": 0.0,
+        "should_send": true
+    },
+    "minecraft:health": {
+        "min_value": 0.0,
+        "max_value": 20.0,
+        "default_min_value": 0.0,
+        "default_max_value": 20.0,
+        "default_value": 20.0,
+        "should_send": true
+    },
+    "minecraft:movement": {
+        "min_value": 0.0,
+        "max_value": 340282346638528859811704183484516925440.0,
+        "default_min_value": 0.0,
+        "default_max_value": 340282346638528859811704183484516925440.0,
+        "default_value": 0.10,
+        "should_send": true
+    },
+    "ur:flight": {
+        "min_value": 0.0,
+        "max_value": 340282346638528859811704183484516925440.0,
+        "default_min_value": 0.0,
+        "default_max_value": 340282346638528859811704183484516925440.0,
+        "default_value": 0.05,
+        "should_send": false
+    },
+    "minecraft:underwater_movement": {
+        "min_value": 0.0,
+        "max_value": 340282346638528859811704183484516925440.0,
+        "default_min_value": 0.0,
+        "default_max_value": 340282346638528859811704183484516925440.0,
+        "default_value": 0.02,
+        "should_send": true
+    },
+    "minecraft:lava_movement": {
+        "min_value": 0.0,
+        "max_value": 340282346638528859811704183484516925440.0,
+        "default_min_value": 0.0,
+        "default_max_value": 340282346638528859811704183484516925440.0,
+        "default_value": 0.02,
+        "should_send": true
+    },
+    "minecraft:follow_range": {
+        "min_value": 0.0,
+        "max_value": 2048.0,
+        "default_min_value": 0.0,
+        "default_max_value": 2048.0,
+        "default_value": 16.0,
+        "should_send": false
+    },
+    "minecraft:player.hunger": {
+        "min_value": 0.0,
+        "max_value": 20.0,
+        "default_min_value": 0.0,
+        "default_max_value": 20.0,
+        "default_value": 20.0,
+        "should_send": true
+    },
+    "minecraft:attack_damage": {
+        "min_value": 0.0,
+        "max_value": 340282346638528859811704183484516925440.0,
+        "default_min_value": 0.0,
+        "default_max_value": 340282346638528859811704183484516925440.0,
+        "default_value": 1.0,
+        "should_send": true
+    },
+    "minecraft:player.level": {
+        "min_value": 0.0,
+        "max_value": 24791.0,
+        "default_min_value": 0.0,
+        "default_max_value": 24791.0,
+        "default_value": 0.0,
+        "should_send": true
+    },
+    "minecraft:player.experience": {
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "default_min_value": 0.0,
+        "default_max_value": 1.0,
+        "default_value": 0.0,
+        "should_send": true
+    },
+    "minecraft:luck": {
+        "min_value": -1024.0,
+        "max_value": 1024.0,
+        "default_min_value": -1024.0,
+        "default_max_value": 1024.0,
+        "default_value": 0.0,
+        "should_send": true
+    },
+    "minecraft:horse.jump_strength": {
+        "min_value": 0.0,
+        "max_value": 0.7101778,
+        "default_min_value": 0.0,
+        "default_max_value": 0.7101778,
+        "default_value": 0.7101778,
+        "should_send": true
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:lab_table",
+      "states": {
+        "direction": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {},
+    "permutations": [],
+    "sc:default_state": {
+      "direction": 0
+    },
+    "sc:protocol_runtime_ids": [
+      7792,
+      7793,
+      7794,
+      7795
+    ]
+  }
+}

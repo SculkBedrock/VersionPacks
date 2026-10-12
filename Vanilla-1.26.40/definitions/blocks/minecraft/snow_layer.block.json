@@ -1,0 +1,381 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:snow_layer",
+      "states": {
+        "covered_bit": [
+          false,
+          true
+        ],
+        "height": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.2
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.2,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 0",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:snowball",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ],
+                "requires": {
+                  "items": [
+                    "minecraft:wooden_shovel",
+                    "minecraft:golden_shovel",
+                    "minecraft:stone_shovel",
+                    "minecraft:copper_shovel",
+                    "minecraft:iron_shovel",
+                    "minecraft:diamond_shovel",
+                    "minecraft:netherite_shovel"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 1",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:snowball",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ],
+                "requires": {
+                  "items": [
+                    "minecraft:wooden_shovel",
+                    "minecraft:golden_shovel",
+                    "minecraft:stone_shovel",
+                    "minecraft:copper_shovel",
+                    "minecraft:iron_shovel",
+                    "minecraft:diamond_shovel",
+                    "minecraft:netherite_shovel"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 2",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:snowball",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ],
+                "requires": {
+                  "items": [
+                    "minecraft:wooden_shovel",
+                    "minecraft:golden_shovel",
+                    "minecraft:stone_shovel",
+                    "minecraft:copper_shovel",
+                    "minecraft:iron_shovel",
+                    "minecraft:diamond_shovel",
+                    "minecraft:netherite_shovel"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 3",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:snowball",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 2,
+                    "chance": 1.0
+                  }
+                ],
+                "requires": {
+                  "items": [
+                    "minecraft:wooden_shovel",
+                    "minecraft:golden_shovel",
+                    "minecraft:stone_shovel",
+                    "minecraft:copper_shovel",
+                    "minecraft:iron_shovel",
+                    "minecraft:diamond_shovel",
+                    "minecraft:netherite_shovel"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 4",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:snowball",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 2,
+                    "chance": 1.0
+                  }
+                ],
+                "requires": {
+                  "items": [
+                    "minecraft:wooden_shovel",
+                    "minecraft:golden_shovel",
+                    "minecraft:stone_shovel",
+                    "minecraft:copper_shovel",
+                    "minecraft:iron_shovel",
+                    "minecraft:diamond_shovel",
+                    "minecraft:netherite_shovel"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 5",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:snowball",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 3,
+                    "chance": 1.0
+                  }
+                ],
+                "requires": {
+                  "items": [
+                    "minecraft:wooden_shovel",
+                    "minecraft:golden_shovel",
+                    "minecraft:stone_shovel",
+                    "minecraft:copper_shovel",
+                    "minecraft:iron_shovel",
+                    "minecraft:diamond_shovel",
+                    "minecraft:netherite_shovel"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 6",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:snowball",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 3,
+                    "chance": 1.0
+                  }
+                ],
+                "requires": {
+                  "items": [
+                    "minecraft:wooden_shovel",
+                    "minecraft:golden_shovel",
+                    "minecraft:stone_shovel",
+                    "minecraft:copper_shovel",
+                    "minecraft:iron_shovel",
+                    "minecraft:diamond_shovel",
+                    "minecraft:netherite_shovel"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 7",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:snowball",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 4,
+                    "chance": 1.0
+                  }
+                ],
+                "requires": {
+                  "items": [
+                    "minecraft:wooden_shovel",
+                    "minecraft:golden_shovel",
+                    "minecraft:stone_shovel",
+                    "minecraft:copper_shovel",
+                    "minecraft:iron_shovel",
+                    "minecraft:diamond_shovel",
+                    "minecraft:netherite_shovel"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "sc:default_state": {
+      "covered_bit": false,
+      "height": 0
+    },
+    "sc:protocol_runtime_ids": [
+      1032,
+      1033,
+      1034,
+      1035,
+      1036,
+      1037,
+      1038,
+      1039,
+      1040,
+      1041,
+      1042,
+      1043,
+      1044,
+      1045,
+      1046,
+      1047
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:poplar_trapdoor",
+      "states": {
+        "direction": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "open_bit": [
+          false,
+          true
+        ],
+        "upside_down_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 3.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 3.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": false,
+        "mode": "independent",
+        "entries": []
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "direction": 0,
+      "open_bit": false,
+      "upside_down_bit": false
+    },
+    "sc:protocol_runtime_ids": [
+      1326,
+      1330,
+      1334,
+      1338,
+      1327,
+      1331,
+      1335,
+      1339,
+      1328,
+      1332,
+      1336,
+      1340,
+      1329,
+      1333,
+      1337,
+      1341
+    ]
+  }
+}

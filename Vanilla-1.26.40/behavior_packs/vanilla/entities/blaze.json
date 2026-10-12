@@ -1,0 +1,174 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:blaze",
+      "is_experimental": false,
+      "is_summonable": true,
+      "is_spawnable": true,
+      "spawn_category": "monster"
+    },
+    "components": {
+      "minecraft:attack": {
+        "damage": 6
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.melee_attack": {
+        "random_stop_interval": 2,
+        "track_target": true,
+        "priority": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "set_persistent": true,
+        "must_see": true,
+        "entity_types": [
+          {
+            "filters": {
+              "AND": [
+                {
+                  "test": "is_family",
+                  "subject": 1,
+                  "operator": 0,
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 48
+          }
+        ],
+        "priority": 2
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 6
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 5,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.ranged_attack": {
+        "charge_shoot_trigger": 4.0,
+        "attack_interval_max": 5,
+        "attack_interval_min": 3,
+        "attack_radius": 16,
+        "burst_interval": 0.3,
+        "burst_shots": 3,
+        "priority": 4,
+        "charge_charged_trigger": 0.0,
+        "set_persistent": true
+      },
+      "minecraft:can_climb": {},
+      "minecraft:can_fly": {},
+      "minecraft:collision_box": {
+        "height": 1.8,
+        "width": 0.5
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": "no"
+        }
+      },
+      "minecraft:despawn": {
+        "filters": [
+          {
+            "all_of": [
+              {
+                "test": "is_persistent",
+                "value": false
+              },
+              {
+                "operator": ">=",
+                "test": "light_level",
+                "value": 8
+              },
+              {
+                "test": "is_daytime",
+                "value": true
+              },
+              {
+                "subject": "self",
+                "test": "inactivity_timer",
+                "value": 600
+              },
+              {
+                "test": "random_chance",
+                "value": 50
+              },
+              {
+                "operator": ">",
+                "test": "distance_to_nearest_player",
+                "value": 54
+              },
+              {
+                "test": "surface_mob",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": {
+          "expression": "query.last_hit_by_player ? 10 : 0",
+          "version": 0
+        }
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:follow_range": {
+        "max": 48,
+        "value": 48
+      },
+      "minecraft:health": {
+        "max": 20,
+        "value": 20
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "cause": "drowning",
+            "damage_per_tick": 1,
+            "filters": {
+              "operator": "==",
+              "test": "in_water_or_rain",
+              "value": true
+            }
+          }
+        ]
+      },
+      "minecraft:jump.static": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/blaze.json"
+      },
+      "minecraft:movement": {
+        "value": 0.23
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:nameable": {},
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "using_door_annotation": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:shooter": {
+        "def": "minecraft:small_fireball"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "blaze",
+          "monster",
+          "mob"
+        ]
+      }
+    },
+    "events": {}
+  }
+}

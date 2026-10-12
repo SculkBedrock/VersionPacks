@@ -1,0 +1,195 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:zombie_horse",
+      "is_summonable": true,
+      "is_spawnable": true,
+      "spawn_category": "creature"
+    },
+    "components": {
+      "minecraft:ambient_sound_interval": {},
+      "minecraft:balloonable": {},
+      "minecraft:behavior.look_at_player": {
+        "look_time": {
+          "min": 1,
+          "max": 2
+        },
+        "look_distance": 6,
+        "priority": 7
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.2
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:breathable": {
+        "breathes_water": true,
+        "suffocate_time": 0,
+        "total_supply": 15
+      },
+      "minecraft:collision_box": {
+        "height": 1.6,
+        "width": 1.4
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:health": {
+        "max": 15,
+        "value": 15
+      },
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_max": 1.0,
+          "range_min": 0.4
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "cause": "lava",
+            "damage_per_tick": 4,
+            "filters": {
+              "operator": "==",
+              "test": "in_lava",
+              "subject": "self",
+              "value": true
+            }
+          }
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:is_tamed": {},
+      "minecraft:jump.static": {},
+      "minecraft:leashable": {
+        "presets": [
+          {
+            "filter": {
+              "subject": "other",
+              "test": "is_family",
+              "value": "happy_ghast"
+            },
+            "spring_type": "quad_dampened"
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:nameable": {},
+      "minecraft:navigation.walk": {
+        "avoid_water": true,
+        "is_amphibious": true,
+        "using_door_annotation": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "zombiehorse",
+          "undead",
+          "mob"
+        ]
+      }
+    },
+    "component_groups": {
+      "minecraft:horse_adult": {
+        "minecraft:behavior.mount_pathing": {
+          "target_dist": 0.0,
+          "priority": 2,
+          "speed_multiplier": 1.5,
+          "track_target": true
+        },
+        "minecraft:behavior.player_ride_tamed": {},
+        "minecraft:experience_reward": {
+          "on_death": {
+            "expression": "query.last_hit_by_player ? Math.Random(1,3) : 0",
+            "version": 12
+          }
+        },
+        "minecraft:leashable_to": {},
+        "minecraft:loot": {
+          "table": "loot_tables/entities/zombie_horse.json"
+        },
+        "minecraft:rideable": {
+          "family_types": [
+            "zombie"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seat_count": 1,
+          "seats": {
+            "position": [
+              0.0,
+              1.1,
+              -0.2
+            ]
+          }
+        }
+      },
+      "minecraft:horse_baby": {
+        "minecraft:ageable": {
+          "duration": 1200,
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 4,
+          "speed_multiplier": 1.0
+        },
+        "minecraft:is_baby": {},
+        "minecraft:scale_by_age": {
+          "end_scale": 1.0,
+          "start_scale": 0.5
+        }
+      }
+    },
+    "events": {
+      "minecraft:ageable_grow_up": {
+        "add": {
+          "component_groups": [
+            "minecraft:horse_adult"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:horse_baby"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:horse_adult"
+              ]
+            },
+            "weight": 36
+          },
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:horse_baby"
+              ]
+            },
+            "weight": 9
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:strider",
+      "is_summonable": true,
+      "is_spawnable": true,
+      "spawn_category": "creature"
+    },
+    "components": {
+      "minecraft:balloonable": {},
+      "minecraft:behavior.look_at_player": {
+        "look_distance": 6,
+        "priority": 9
+      },
+      "minecraft:behavior.panic": {
+        "panic_sound": "panic",
+        "priority": 3,
+        "sound_interval": {
+          "max": 3.0,
+          "min": 1.0
+        },
+        "speed_multiplier": 1.1
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 10
+      },
+      "minecraft:behavior.tempt": {
+        "can_tempt_while_ridden": true,
+        "items": [
+          "warped_fungus",
+          "warped_fungus_on_a_stick"
+        ],
+        "priority": 5,
+        "tempt_sound": "tempt",
+        "sound_interval": {
+          "max": 5.0,
+          "min": 2.0
+        },
+        "speed_multiplier": 1.2
+      },
+      "minecraft:collision_box": {
+        "height": 1.7,
+        "width": 0.9
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:health": {
+        "max": 20,
+        "value": 20
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "cause": "drowning",
+            "damage_per_tick": 1,
+            "filters": {
+              "test": "in_contact_with_water"
+            }
+          }
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:jump.static": {},
+      "minecraft:lava_movement": {
+        "value": 0.32
+      },
+      "minecraft:leashable": {},
+      "minecraft:movement": {
+        "value": 0.16
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:movement_sound_distance_offset": {
+        "value": 0.6
+      },
+      "minecraft:nameable": {},
+      "minecraft:navigation.walk": {
+        "avoid_water": true,
+        "can_path_over_lava": true,
+        "can_sink": false,
+        "can_walk_in_lava": true
+      },
+      "minecraft:offspring": {
+        "offspring_pairs": {
+          "minecraft:strider": "minecraft:strider"
+        }
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:spawn_egg_interaction": {},
+      "minecraft:type_family": {
+        "family": [
+          "strider",
+          "mob"
+        ]
+      }
+    },
+    "component_groups": {
+      "minecraft:strider_piglin_jockey": {
+        "minecraft:addrider": {
+          "riders": [
+            {
+              "entity_type": "minecraft:zombie_pigman",
+              "spawn_event": "minecraft:spawn_as_strider_jockey"
+            }
+          ]
+        },
+        "minecraft:rideable": {
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player",
+            "zombie_pigman"
+          ],
+          "interact_text": "action.interact.ride.strider",
+          "seat_count": 1,
+          "seats": {
+            "position": [
+              0.0,
+              1.7,
+              -0.2
+            ]
+          }
+        }
+      },
+      "minecraft:detect_suffocating": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "start_suffocating",
+              "filters": {
+                "all_of": [
+                  {
+                    "operator": "==",
+                    "test": "in_lava",
+                    "subject": "self",
+                    "value": false
+                  },
+                  {
+                    "any_of": [
+                      {
+                        "operator": "==",
+                        "test": "is_riding",
+                        "subject": "self",
+                        "value": false
+                      },
+                      {
+                        "operator": "==",
+                        "test": "in_lava",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "event": "on_not_riding_parent",
+              "filters": {
+                "all_of": [
+                  {
+                    "operator": "equals",
+                    "test": "is_riding",
+                    "subject": "self",
+                    "value": false
+                  },
+                  {
+                    "operator": "not",
+                    "test": "has_component",
+                    "subject": "self",
+                    "value": "minecraft:behavior.move_to_liquid"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "minecraft:start_suffocating": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "stop_suffocating",
+              "filters": {
+                "any_of": [
+                  {
+                    "operator": "==",
+                    "test": "in_lava",
+                    "subject": "self",
+                    "value": true
+                  },
+                  {
+                    "operator": "==",
+                    "test": "in_lava",
+                    "subject": "other",
+                    "value": true
+                  }
+                ]
+              }
+            },
+            {
+              "event": "on_not_riding_parent",
+              "filters": {
+                "all_of": [
+                  {
+                    "operator": "equals",
+                    "test": "is_riding",
+                    "subject": "self",
+                    "value": false
+                  },
+                  {
+                    "operator": "not",
+                    "test": "has_component",
+                    "subject": "self",
+                    "value": "minecraft:behavior.move_to_liquid"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "minecraft:is_shaking": {}
+      },
+      "minecraft:strider_adult": {
+        "minecraft:behavior.breed": {
+          "priority": 4
+        },
+        "minecraft:breedable": {
+          "breed_items": [
+            "warped_fungus"
+          ],
+          "breeds_with": {
+            "minecraft:strider": {}
+          },
+          "require_tame": false
+        },
+        "minecraft:experience_reward": {
+          "on_bred": {
+            "expression": "Math.Random(1,7)",
+            "version": 13
+          },
+          "on_death": {
+            "expression": "query.last_hit_by_player ? Math.Random(1,3) : 0",
+            "version": 13
+          }
+        },
+        "minecraft:leashable_to": {},
+        "minecraft:loot": {
+          "table": "loot_tables/entities/strider.json"
+        },
+        "minecraft:type_family": {
+          "family": [
+            "strider",
+            "strider_adult",
+            "mob"
+          ]
+        }
+      },
+      "minecraft:strider_baby": {
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            "warped_fungus"
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 6,
+          "speed_multiplier": 1.1
+        },
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        },
+        "minecraft:type_family": {
+          "family": [
+            "strider",
+            "strider_baby",
+            "mob"
+          ]
+        }
+      },
+      "minecraft:strider_parent_jockey": {
+        "minecraft:addrider": {
+          "riders": [
+            {
+              "entity_type": "minecraft:strider",
+              "spawn_event": "minecraft:spawn_baby_strider_jockey"
+            }
+          ]
+        },
+        "minecraft:rideable": {
+          "family_types": [
+            "strider"
+          ],
+          "seat_count": 1,
+          "seats": {
+            "position": [
+              0.0,
+              1.7,
+              0.0
+            ]
+          }
+        }
+      },
+      "minecraft:strider_saddled": {
+        "minecraft:behavior.controlled_by_player": {
+          "mount_speed_multiplier": 1.45
+        },
+        "minecraft:boostable": {
+          "boost_items": [
+            {
+              "damage": 1,
+              "item": "warped_fungus_on_a_stick",
+              "replace_item": "fishing_rod"
+            }
+          ],
+          "duration": 16.0,
+          "speed_multiplier": 1.35
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "hurt_item": 1,
+              "interact_text": "action.interact.removesaddle",
+              "on_interact": {
+                "event": "minecraft:on_unsaddled",
+                "filters": {
+                  "all_of": [
+                    {
+                      "subject": "other",
+                      "test": "is_sneak_held",
+                      "value": false
+                    },
+                    {
+                      "domain": "hand",
+                      "subject": "other",
+                      "test": "has_equipment",
+                      "value": "shears"
+                    },
+                    {
+                      "operator": "equals",
+                      "test": "rider_count",
+                      "subject": "self",
+                      "value": 0
+                    }
+                  ]
+                }
+              },
+              "spawn_items": {
+                "table": "loot_tables/entities/saddle.json",
+                "y_offset": 1.7
+              },
+              "play_sounds": "unsaddle",
+              "vibration": "shear"
+            }
+          ]
+        },
+        "minecraft:is_saddled": {},
+        "minecraft:item_controllable": {
+          "control_items": "warped_fungus_on_a_stick"
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/strider_saddled.json"
+        },
+        "minecraft:rideable": {
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.strider",
+          "seat_count": 1,
+          "seats": {
+            "position": [
+              0.0,
+              1.7,
+              -0.2
+            ]
+          }
+        }
+      },
+      "minecraft:strider_pathing_behaviors": {
+        "minecraft:behavior.move_to_liquid": {
+          "goal_radius": 0.9,
+          "priority": 7,
+          "search_count": 30,
+          "search_height": 10,
+          "material_type": "Lava",
+          "search_range": 16
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 8,
+          "speed_multiplier": 0.8
+        },
+        "minecraft:behavior.rise_to_liquid_level": {
+          "liquid_y_offset": 0.25,
+          "priority": 0,
+          "rise_delta": 0.01,
+          "sink_delta": 0.01
+        }
+      },
+      "minecraft:strider_unsaddled": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "action.interact.saddle",
+              "on_interact": {
+                "event": "minecraft:on_saddled",
+                "filters": {
+                  "domain": "hand",
+                  "subject": "other",
+                  "test": "has_equipment",
+                  "value": "saddle"
+                }
+              },
+              "play_sounds": "saddle",
+              "use_item": true
+            }
+          ]
+        }
+      }
+    },
+    "events": {
+      "minecraft:ageable_grow_up": {
+        "add": {
+          "component_groups": [
+            "minecraft:strider_adult",
+            "minecraft:strider_unsaddled"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:strider_baby"
+          ]
+        }
+      },
+      "on_not_riding_parent": {
+        "add": {
+          "component_groups": [
+            "minecraft:strider_pathing_behaviors"
+          ]
+        }
+      },
+      "minecraft:on_saddled": {
+        "add": {
+          "component_groups": [
+            "minecraft:strider_saddled"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:strider_unsaddled"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "trigger": "spawn_baby"
+      },
+      "minecraft:on_unsaddled": {
+        "add": {
+          "component_groups": [
+            "minecraft:strider_unsaddled"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:strider_saddled"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "trigger": "spawn_adult",
+            "weight": 40
+          },
+          {
+            "trigger": "spawn_adult_piglin_jockey",
+            "weight": 2
+          },
+          {
+            "trigger": "spawn_adult_parent_jockey",
+            "weight": 8
+          },
+          {
+            "trigger": "spawn_baby",
+            "weight": 50
+          }
+        ]
+      },
+      "minecraft:spawn_baby_strider_jockey": {
+        "add": {
+          "component_groups": [
+            "minecraft:strider_baby",
+            "minecraft:detect_suffocating"
+          ]
+        }
+      },
+      "spawn_adult": {
+        "add": {
+          "component_groups": [
+            "minecraft:strider_adult",
+            "minecraft:strider_unsaddled",
+            "minecraft:detect_suffocating",
+            "minecraft:strider_pathing_behaviors"
+          ]
+        }
+      },
+      "spawn_adult_parent_jockey": {
+        "add": {
+          "component_groups": [
+            "minecraft:strider_adult",
+            "minecraft:strider_parent_jockey",
+            "minecraft:strider_unsaddled",
+            "minecraft:detect_suffocating",
+            "minecraft:strider_pathing_behaviors"
+          ]
+        }
+      },
+      "spawn_adult_piglin_jockey": {
+        "add": {
+          "component_groups": [
+            "minecraft:strider_adult",
+            "minecraft:strider_saddled",
+            "minecraft:strider_piglin_jockey",
+            "minecraft:detect_suffocating",
+            "minecraft:strider_pathing_behaviors"
+          ]
+        }
+      },
+      "spawn_baby": {
+        "add": {
+          "component_groups": [
+            "minecraft:strider_baby",
+            "minecraft:detect_suffocating",
+            "minecraft:strider_pathing_behaviors"
+          ]
+        }
+      },
+      "start_suffocating": {
+        "add": {
+          "component_groups": [
+            "minecraft:start_suffocating"
+          ]
+        }
+      },
+      "stop_suffocating": {
+        "add": {
+          "component_groups": [
+            "minecraft:detect_suffocating"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:start_suffocating"
+          ]
+        }
+      }
+    }
+  }
+}

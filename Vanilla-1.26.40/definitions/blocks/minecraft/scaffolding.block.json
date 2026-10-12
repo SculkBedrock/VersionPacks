@@ -1,0 +1,82 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:scaffolding",
+      "states": {
+        "stability": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "stability_check": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.5,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": true,
+        "mode": "independent",
+        "entries": [
+          {
+            "item": "minecraft:scaffolding",
+            "chance": 1.0,
+            "count": [
+              {
+                "value": 1,
+                "chance": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "stability": 0,
+      "stability_check": false
+    },
+    "sc:protocol_runtime_ids": [
+      5647,
+      5655,
+      5648,
+      5656,
+      5649,
+      5657,
+      5650,
+      5658,
+      5651,
+      5659,
+      5652,
+      5660,
+      5653,
+      5661,
+      5654,
+      5662
+    ]
+  }
+}

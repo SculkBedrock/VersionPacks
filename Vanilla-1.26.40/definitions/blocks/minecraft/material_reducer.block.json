@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:material_reducer",
+      "states": {
+        "direction": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {},
+    "permutations": [],
+    "sc:default_state": {
+      "direction": 0
+    },
+    "sc:protocol_runtime_ids": [
+      16704,
+      16705,
+      16706,
+      16707
+    ]
+  }
+}

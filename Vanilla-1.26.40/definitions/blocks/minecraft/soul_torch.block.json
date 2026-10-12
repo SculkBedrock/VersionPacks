@@ -1,0 +1,65 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:soul_torch",
+      "states": {
+        "torch_facing_direction": [
+          "east",
+          "north",
+          "south",
+          "top",
+          "unknown",
+          "west"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": true,
+        "mode": "independent",
+        "entries": [
+          {
+            "item": "minecraft:soul_torch",
+            "chance": 1.0,
+            "count": [
+              {
+                "value": 1,
+                "chance": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "torch_facing_direction": "unknown"
+    },
+    "sc:protocol_runtime_ids": [
+      8251,
+      8252,
+      8253,
+      8254,
+      8249,
+      8250
+    ]
+  }
+}

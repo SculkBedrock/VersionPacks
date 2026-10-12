@@ -1,0 +1,16 @@
+{
+    "name": "Vanilla",
+    "description": "Minecraft: Bedrock Edition vanilla version pack",
+    "authors": [
+        "SculkBedrock Project",
+        "Mojang AB"
+    ],
+    "minecraft_version": "1.26.40",
+    "minecraft_network_version": "1.26.40",
+    "protocol_version": 2168,
+    "block_data": {
+        "schema_version": 1,
+        "directory": "definitions/blocks",
+        "network_id_mode": "hashed"
+    }
+}

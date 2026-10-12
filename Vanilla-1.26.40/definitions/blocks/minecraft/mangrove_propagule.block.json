@@ -1,0 +1,140 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:mangrove_propagule",
+      "states": {
+        "hanging": [
+          false,
+          true
+        ],
+        "propagule_stage": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:mangrove_propagule','hanging') == false",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:mangrove_propagule",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:mangrove_propagule','hanging') == true && q.block_property('minecraft:mangrove_propagule','propagule_stage') == 4",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:mangrove_propagule",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:mangrove_propagule','hanging') == true && q.block_property('minecraft:mangrove_propagule','propagule_stage') == 0",
+        "components": {
+          "sc:drops": {
+            "enabled": false,
+            "mode": "independent",
+            "entries": []
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:mangrove_propagule','hanging') == true && q.block_property('minecraft:mangrove_propagule','propagule_stage') == 1",
+        "components": {
+          "sc:drops": {
+            "enabled": false,
+            "mode": "independent",
+            "entries": []
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:mangrove_propagule','hanging') == true && q.block_property('minecraft:mangrove_propagule','propagule_stage') == 2",
+        "components": {
+          "sc:drops": {
+            "enabled": false,
+            "mode": "independent",
+            "entries": []
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:mangrove_propagule','hanging') == true && q.block_property('minecraft:mangrove_propagule','propagule_stage') == 3",
+        "components": {
+          "sc:drops": {
+            "enabled": false,
+            "mode": "independent",
+            "entries": []
+          }
+        }
+      }
+    ],
+    "sc:default_state": {
+      "hanging": false,
+      "propagule_stage": 0
+    },
+    "sc:protocol_runtime_ids": [
+      14139,
+      14140,
+      14141,
+      14142,
+      14143,
+      14144,
+      14145,
+      14146,
+      14147,
+      14148
+    ]
+  }
+}

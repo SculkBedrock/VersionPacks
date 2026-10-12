@@ -1,0 +1,32 @@
+{
+  "result": {
+    "pageId": "DressingRoom_ColorPicker",
+    "addToRecentlyViewed": false,
+    "pageRefresh": false,
+    "sidebarLayoutType": "none",
+    "layout": [
+      {
+        "sectionName": "rows",
+        "rows": [
+          {
+            "controlId": "Layout",
+            "components": [
+              {
+                "type": "appearanceInteractionComp",
+                "$type": "AppearanceInteractionComponent"
+              },
+              {
+                "type": "colorPickerComp",
+                "$type": "ColorPickerComponent"
+              },
+              {
+                "type": "openExpandedAppearanceViewComp",
+                "$type": "OpenExpandedAppearanceViewComponent"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

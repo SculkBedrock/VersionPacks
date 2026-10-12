@@ -1,0 +1,335 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:melon_stem",
+      "states": {
+        "facing_direction": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "growth": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 0",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:melon_seeds",
+                "chance": 0.18700000000000006,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 0.9315508021390371
+                  },
+                  {
+                    "value": 2,
+                    "chance": 0.06631016042780746
+                  },
+                  {
+                    "value": 3,
+                    "chance": 0.00213903743315541
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 1",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:melon_seeds",
+                "chance": 0.349,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 0.8607449856733524
+                  },
+                  {
+                    "value": 2,
+                    "chance": 0.132378223495702
+                  },
+                  {
+                    "value": 3,
+                    "chance": 0.006876790830945498
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 2",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:melon_seeds",
+                "chance": 0.488,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 0.7868852459016393
+                  },
+                  {
+                    "value": 2,
+                    "chance": 0.19672131147540983
+                  },
+                  {
+                    "value": 3,
+                    "chance": 0.01639344262295078
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 3",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:melon_seeds",
+                "chance": 0.6056,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 0.7103698811096434
+                  },
+                  {
+                    "value": 2,
+                    "chance": 0.2582562747688243
+                  },
+                  {
+                    "value": 3,
+                    "chance": 0.031373844121532345
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 4",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:melon_seeds",
+                "chance": 0.7087,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 0.6270636376463948
+                  },
+                  {
+                    "value": 2,
+                    "chance": 0.3135318188231974
+                  },
+                  {
+                    "value": 3,
+                    "chance": 0.05940454353040775
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 5",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:melon_seeds",
+                "chance": 0.784,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 0.5510204081632653
+                  },
+                  {
+                    "value": 2,
+                    "chance": 0.36734693877551017
+                  },
+                  {
+                    "value": 3,
+                    "chance": 0.08163265306122455
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 6",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:melon_seeds",
+                "chance": 0.8483,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 0.4694094070493929
+                  },
+                  {
+                    "value": 2,
+                    "chance": 0.4107037604621006
+                  },
+                  {
+                    "value": 3,
+                    "chance": 0.1198868324885065
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 7",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:melon_seeds",
+                "chance": 0.8984,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 0.3878005342831701
+                  },
+                  {
+                    "value": 2,
+                    "chance": 0.4432324131789849
+                  },
+                  {
+                    "value": 3,
+                    "chance": 0.1689670525378451
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "sc:default_state": {
+      "facing_direction": 0,
+      "growth": 0
+    },
+    "sc:protocol_runtime_ids": [
+      8862,
+      8863,
+      8864,
+      8865,
+      8866,
+      8867,
+      8868,
+      8869,
+      8870,
+      8871,
+      8872,
+      8873,
+      8874,
+      8875,
+      8876,
+      8877,
+      8878,
+      8879,
+      8880,
+      8881,
+      8882,
+      8883,
+      8884,
+      8885,
+      8886,
+      8887,
+      8888,
+      8889,
+      8890,
+      8891,
+      8892,
+      8893,
+      8894,
+      8895,
+      8896,
+      8897,
+      8898,
+      8899,
+      8900,
+      8901,
+      8902,
+      8903,
+      8904,
+      8905,
+      8906,
+      8907,
+      8908,
+      8909
+    ]
+  }
+}

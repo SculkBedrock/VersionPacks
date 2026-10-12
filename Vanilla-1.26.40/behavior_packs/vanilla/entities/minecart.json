@@ -1,0 +1,48 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:minecart",
+      "is_experimental": false,
+      "is_summonable": true,
+      "is_spawnable": false,
+      "spawn_category": "misc"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "height": 0.7,
+        "width": 0.98
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:rail_movement": {},
+      "minecraft:rail_sensor": {
+        "eject_on_activate": true
+      },
+      "minecraft:rideable": {
+        "interact_text": "action.interact.ride.minecart",
+        "pull_in_entities": true,
+        "seat_count": 1,
+        "seats": {
+          "position": [
+            0.0,
+            -0.2,
+            0.0
+          ]
+        }
+      },
+      "minecraft:type_family": {
+        "family": [
+          "minecart",
+          "inanimate",
+          "mob"
+        ]
+      }
+    },
+    "events": null
+  }
+}

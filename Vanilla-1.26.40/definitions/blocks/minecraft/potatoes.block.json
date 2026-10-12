@@ -1,0 +1,240 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:potatoes",
+      "states": {
+        "growth": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:potatoes','growth') == 7",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:potato",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 3,
+                    "chance": 0.3417721518987342
+                  },
+                  {
+                    "value": 4,
+                    "chance": 0.45569620253164556
+                  },
+                  {
+                    "value": 5,
+                    "chance": 0.20253164556962025
+                  }
+                ]
+              },
+              {
+                "item": "minecraft:poisonous_potato",
+                "chance": 0.2,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:potatoes','growth') == 0",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:potato",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:potatoes','growth') == 1",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:potato",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:potatoes','growth') == 2",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:potato",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:potatoes','growth') == 3",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:potato",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:potatoes','growth') == 4",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:potato",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:potatoes','growth') == 5",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:potato",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:potatoes','growth') == 6",
+        "components": {
+          "sc:drops": {
+            "enabled": true,
+            "mode": "independent",
+            "entries": [
+              {
+                "item": "minecraft:potato",
+                "chance": 1.0,
+                "count": [
+                  {
+                    "value": 1,
+                    "chance": 1.0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "sc:default_state": {
+      "growth": 0
+    },
+    "sc:protocol_runtime_ids": [
+      1934,
+      1935,
+      1936,
+      1937,
+      1938,
+      1939,
+      1940,
+      1941
+    ]
+  }
+}

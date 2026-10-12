@@ -1,0 +1,45 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "resourcePack.editor.server.description",
+        "name": "resourcePack.editor.server.name",
+        "uuid": "3222066e-79d0-4573-9e15-93472d32cbd5",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            14,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "resourcePack.editor.server.description",
+            "type": "script",
+            "uuid": "68c18ba2-cba3-4aae-9af4-fcae6b733325",
+            "version": [
+                0,
+                0,
+                1
+            ],
+            "language": "javascript",
+            "entry": "scripts/Main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server-editor",
+            "version": "beta"
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "beta"
+        }
+    ],
+    "capabilities": [
+        "editorExtension"
+    ]
+}

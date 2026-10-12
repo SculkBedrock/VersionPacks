@@ -1,0 +1,299 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:deepslate_brick_wall",
+      "states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 3.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 3.5,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": true,
+        "mode": "independent",
+        "entries": [
+          {
+            "item": "minecraft:deepslate_brick_wall",
+            "chance": 1.0,
+            "count": [
+              {
+                "value": 1,
+                "chance": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "wall_connection_type_east": "none",
+      "wall_connection_type_north": "none",
+      "wall_connection_type_south": "none",
+      "wall_connection_type_west": "none",
+      "wall_post_bit": false
+    },
+    "sc:protocol_runtime_ids": [
+      2087,
+      2088,
+      2141,
+      2142,
+      2195,
+      2196,
+      2105,
+      2106,
+      2159,
+      2160,
+      2213,
+      2214,
+      2123,
+      2124,
+      2177,
+      2178,
+      2231,
+      2232,
+      2089,
+      2090,
+      2143,
+      2144,
+      2197,
+      2198,
+      2107,
+      2108,
+      2161,
+      2162,
+      2215,
+      2216,
+      2125,
+      2126,
+      2179,
+      2180,
+      2233,
+      2234,
+      2091,
+      2092,
+      2145,
+      2146,
+      2199,
+      2200,
+      2109,
+      2110,
+      2163,
+      2164,
+      2217,
+      2218,
+      2127,
+      2128,
+      2181,
+      2182,
+      2235,
+      2236,
+      2093,
+      2094,
+      2147,
+      2148,
+      2201,
+      2202,
+      2111,
+      2112,
+      2165,
+      2166,
+      2219,
+      2220,
+      2129,
+      2130,
+      2183,
+      2184,
+      2237,
+      2238,
+      2095,
+      2096,
+      2149,
+      2150,
+      2203,
+      2204,
+      2113,
+      2114,
+      2167,
+      2168,
+      2221,
+      2222,
+      2131,
+      2132,
+      2185,
+      2186,
+      2239,
+      2240,
+      2097,
+      2098,
+      2151,
+      2152,
+      2205,
+      2206,
+      2115,
+      2116,
+      2169,
+      2170,
+      2223,
+      2224,
+      2133,
+      2134,
+      2187,
+      2188,
+      2241,
+      2242,
+      2099,
+      2100,
+      2153,
+      2154,
+      2207,
+      2208,
+      2117,
+      2118,
+      2171,
+      2172,
+      2225,
+      2226,
+      2135,
+      2136,
+      2189,
+      2190,
+      2243,
+      2244,
+      2101,
+      2102,
+      2155,
+      2156,
+      2209,
+      2210,
+      2119,
+      2120,
+      2173,
+      2174,
+      2227,
+      2228,
+      2137,
+      2138,
+      2191,
+      2192,
+      2245,
+      2246,
+      2103,
+      2104,
+      2157,
+      2158,
+      2211,
+      2212,
+      2121,
+      2122,
+      2175,
+      2176,
+      2229,
+      2230,
+      2139,
+      2140,
+      2193,
+      2194,
+      2247,
+      2248
+    ]
+  }
+}

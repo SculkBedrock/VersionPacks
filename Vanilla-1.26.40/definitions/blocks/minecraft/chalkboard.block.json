@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:chalkboard",
+      "states": {
+        "direction": [
+          0,
+          1,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "components": {},
+    "permutations": [],
+    "sc:default_state": {
+      "direction": 0
+    },
+    "sc:protocol_runtime_ids": [
+      5803,
+      5804,
+      5813,
+      5814,
+      5815,
+      5816,
+      5817,
+      5818,
+      5805,
+      5806,
+      5807,
+      5808,
+      5809,
+      5810,
+      5811,
+      5812
+    ]
+  }
+}

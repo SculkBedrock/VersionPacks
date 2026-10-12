@@ -1,0 +1,1219 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:bee",
+      "is_summonable": true,
+      "is_spawnable": true,
+      "properties": {
+        "minecraft:has_nectar": {
+          "client_sync": true,
+          "default": "query.had_component_group('has_nectar')",
+          "type": "bool"
+        }
+      },
+      "spawn_category": "creature"
+    },
+    "components": {
+      "minecraft:balloonable": {
+        "mass": 0.5
+      },
+      "minecraft:behavior.float": {
+        "priority": 19
+      },
+      "minecraft:behavior.move_towards_home_restriction": {
+        "priority": 9
+      },
+      "minecraft:behavior.random_hover": {
+        "hover_height": [
+          1,
+          4
+        ],
+        "y_dist": 8,
+        "interval": 1,
+        "xz_dist": 8,
+        "priority": 12,
+        "y_offset": -1
+      },
+      "minecraft:behavior.tempt": {
+        "can_tempt_vertically": true,
+        "items": [
+          "minecraft:poppy",
+          "minecraft:blue_orchid",
+          "minecraft:allium",
+          "minecraft:azure_bluet",
+          "minecraft:red_tulip",
+          "minecraft:orange_tulip",
+          "minecraft:white_tulip",
+          "minecraft:pink_tulip",
+          "minecraft:oxeye_daisy",
+          "minecraft:cornflower",
+          "minecraft:lily_of_the_valley",
+          "minecraft:dandelion",
+          "minecraft:wither_rose",
+          "minecraft:sunflower",
+          "minecraft:lilac",
+          "minecraft:rose_bush",
+          "minecraft:peony",
+          "minecraft:flowering_azalea",
+          "minecraft:azalea_leaves_flowered",
+          "minecraft:mangrove_propagule",
+          "minecraft:pitcher_plant",
+          "minecraft:torchflower",
+          "minecraft:cherry_leaves",
+          "minecraft:pink_petals",
+          "minecraft:open_eyeblossom"
+        ],
+        "priority": 5,
+        "speed_multiplier": 1.25,
+        "within_radius": 8
+      },
+      "minecraft:block_sensor": {
+        "on_break": [
+          {
+            "block_list": [
+              "minecraft:beehive",
+              "minecraft:bee_nest"
+            ],
+            "on_block_broken": "hive_destroyed"
+          }
+        ],
+        "sensor_radius": 16,
+        "sources": [
+          {
+            "subject": "other",
+            "test": "has_silk_touch",
+            "value": false
+          }
+        ]
+      },
+      "minecraft:breathable": {
+        "suffocateTime": -1,
+        "totalSupply": 0
+      },
+      "minecraft:can_fly": {},
+      "minecraft:collision_box": {
+        "height": 0.5,
+        "width": 0.55
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": "no"
+          },
+          {
+            "deals_damage": "no",
+            "on_damage": {
+              "filters": {
+                "subject": "block",
+                "test": "is_block",
+                "value": "minecraft:sweet_berry_bush"
+              }
+            }
+          }
+        ]
+      },
+      "minecraft:flying_speed": {
+        "value": 0.15
+      },
+      "minecraft:follow_range": {
+        "value": 1024
+      },
+      "minecraft:game_event_movement_tracking": {
+        "emit_flap": true
+      },
+      "minecraft:health": {
+        "max": 10,
+        "value": 10
+      },
+      "minecraft:home": {
+        "home_block_list": [
+          "minecraft:bee_nest",
+          "minecraft:beehive"
+        ],
+        "restriction_radius": 22,
+        "restriction_type": "random_movement"
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "cause": "lava",
+            "damage_per_tick": 4,
+            "filters": {
+              "subject": "self",
+              "test": "in_lava"
+            }
+          }
+        ]
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "interact_text": "action.interact.feed",
+            "on_interact": {
+              "event": "fed_open_eyeblossom",
+              "filters": {
+                "all_of": [
+                  {
+                    "subject": "other",
+                    "test": "is_family",
+                    "value": "player"
+                  },
+                  {
+                    "domain": "hand",
+                    "subject": "other",
+                    "test": "has_equipment",
+                    "value": "minecraft:open_eyeblossom"
+                  }
+                ]
+              }
+            },
+            "particle_on_start": {
+              "particle_type": "food"
+            },
+            "use_item": true,
+            "swing": false
+          },
+          {
+            "interact_text": "action.interact.feed",
+            "on_interact": {
+              "event": "fed_wither_rose",
+              "filters": {
+                "all_of": [
+                  {
+                    "subject": "other",
+                    "test": "is_family",
+                    "value": "player"
+                  },
+                  {
+                    "domain": "hand",
+                    "subject": "other",
+                    "test": "has_equipment",
+                    "value": "minecraft:wither_rose"
+                  }
+                ]
+              }
+            },
+            "particle_on_start": {
+              "particle_type": "food"
+            },
+            "use_item": true,
+            "swing": false
+          }
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:jump.static": {},
+      "minecraft:leashable": {
+        "can_be_cut": false,
+        "can_be_stolen": false,
+        "on_unleash_interact_only": true,
+        "presets": [
+          {
+            "hard_distance": 6,
+            "max_distance": 10,
+            "spring_type": "bouncy",
+            "soft_distance": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:movement.hover": {},
+      "minecraft:nameable": {},
+      "minecraft:navigation.hover": {
+        "avoid_damage_blocks": true,
+        "can_pass_doors": false,
+        "can_path_from_air": true,
+        "avoid_sun": false,
+        "avoid_water": true,
+        "can_path_over_water": true,
+        "can_sink": false
+      },
+      "minecraft:on_target_acquired": {
+        "event": "attacked",
+        "target": "self"
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "bee",
+          "mob",
+          "arthropod"
+        ]
+      }
+    },
+    "component_groups": {
+      "abort_shelter_detection": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "abort_sheltering",
+              "filters": {
+                "all_of": [
+                  {
+                    "operator": "==",
+                    "test": "weather",
+                    "value": "clear"
+                  },
+                  {
+                    "test": "is_daytime",
+                    "value": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "add_poison_effect": {
+        "minecraft:behavior.timer_flag_1": {
+          "duration_range": {
+            "min": 0.05,
+            "max": 0.05
+          },
+          "on_end": {
+            "event": "minecraft:on_poison_effect_added"
+          }
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "display_on_screen_animation": true,
+              "duration": 25,
+              "effect": "poison"
+            }
+          ],
+          "remove_effects": "poison"
+        }
+      },
+      "add_wither_effect": {
+        "minecraft:behavior.timer_flag_1": {
+          "duration_range": {
+            "min": 0.05,
+            "max": 0.05
+          },
+          "on_end": {
+            "event": "minecraft:on_wither_effect_added"
+          }
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "display_on_screen_animation": true,
+              "duration": 40,
+              "effect": "wither"
+            }
+          ],
+          "remove_effects": "wither"
+        }
+      },
+      "has_nectar": {
+        "minecraft:grows_crop": {
+          "chance": 0.03,
+          "charges": 10
+        }
+      },
+      "angry_bee": {
+        "minecraft:angry": {
+          "broadcastAnger": true,
+          "broadcast_anger_when_dying": false,
+          "broadcastRange": 20,
+          "calm_event": {
+            "event": "calmed_down",
+            "target": "self"
+          },
+          "broadcast_filters": {
+            "operator": "!=",
+            "test": "is_family",
+            "value": "pacified"
+          },
+          "duration": 25
+        },
+        "minecraft:behavior.melee_box_attack": {
+          "attack_once": true,
+          "speed_multiplier": 1.4,
+          "on_attack": {
+            "event": "countdown_to_perish_event"
+          },
+          "on_kill": {
+            "event": "countdown_to_perish_event"
+          },
+          "priority": 2
+        }
+      },
+      "bee_adult": {
+        "minecraft:behavior.breed": {
+          "priority": 4
+        },
+        "minecraft:breedable": {
+          "breed_items": [
+            {
+              "item": "minecraft:poppy"
+            },
+            {
+              "item": "minecraft:blue_orchid"
+            },
+            {
+              "item": "minecraft:allium"
+            },
+            {
+              "item": "minecraft:azure_bluet"
+            },
+            {
+              "item": "minecraft:red_tulip"
+            },
+            {
+              "item": "minecraft:orange_tulip"
+            },
+            {
+              "item": "minecraft:white_tulip"
+            },
+            {
+              "item": "minecraft:pink_tulip"
+            },
+            {
+              "item": "minecraft:oxeye_daisy"
+            },
+            {
+              "item": "minecraft:cornflower"
+            },
+            {
+              "item": "minecraft:lily_of_the_valley"
+            },
+            {
+              "item": "minecraft:dandelion"
+            },
+            {
+              "item": "minecraft:wither_rose"
+            },
+            {
+              "item": "minecraft:sunflower"
+            },
+            {
+              "item": "minecraft:lilac"
+            },
+            {
+              "item": "minecraft:rose_bush"
+            },
+            {
+              "item": "minecraft:peony"
+            },
+            {
+              "item": "minecraft:flowering_azalea"
+            },
+            {
+              "item": "minecraft:azalea_leaves_flowered"
+            },
+            {
+              "item": "minecraft:mangrove_propagule"
+            },
+            {
+              "item": "minecraft:pitcher_plant"
+            },
+            {
+              "item": "minecraft:torchflower"
+            },
+            {
+              "item": "minecraft:cherry_leaves"
+            },
+            {
+              "item": "minecraft:pink_petals"
+            }
+          ],
+          "breeds_with": {
+            "minecraft:bee": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "require_tame": false
+        },
+        "minecraft:experience_reward": {
+          "on_bred": {
+            "expression": "Math.Random(1,7)",
+            "version": 12
+          },
+          "on_death": {
+            "expression": "query.last_hit_by_player ? Math.Random(1,3) : 0",
+            "version": 12
+          }
+        },
+        "minecraft:offspring": {
+          "offspring_pairs": {
+            "minecraft:bee": "minecraft:bee"
+          }
+        }
+      },
+      "countdown_to_perish": {
+        "minecraft:behavior.panic": {
+          "force": true,
+          "priority": 1,
+          "speed_multiplier": 1.25
+        },
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "randomInterval": true,
+          "time": [
+            10,
+            60
+          ],
+          "time_down_event": {
+            "event": "perish_event",
+            "target": "self"
+          }
+        },
+        "minecraft:type_family": {
+          "family": [
+            "bee",
+            "mob",
+            "arthropod",
+            "pacified"
+          ]
+        }
+      },
+      "bee_baby": {
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            "minecraft:poppy",
+            "minecraft:blue_orchid",
+            "minecraft:allium",
+            "minecraft:azure_bluet",
+            "minecraft:red_tulip",
+            "minecraft:orange_tulip",
+            "minecraft:white_tulip",
+            "minecraft:pink_tulip",
+            "minecraft:oxeye_daisy",
+            "minecraft:cornflower",
+            "minecraft:lily_of_the_valley",
+            "minecraft:dandelion",
+            "minecraft:wither_rose",
+            "minecraft:sunflower",
+            "minecraft:lilac",
+            "minecraft:rose_bush",
+            "minecraft:peony",
+            "minecraft:flowering_azalea",
+            "minecraft:azalea_leaves_flowered",
+            "minecraft:mangrove_propagule",
+            "minecraft:pitcher_plant",
+            "minecraft:torchflower",
+            "minecraft:cherry_leaves",
+            "minecraft:pink_petals"
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 11, // This has to be lower priority than move to block goal so that bee seek shelter in rain instead of following parents
+          "speed_multiplier": 1.1
+        },
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        }
+      },
+      "default_sound": {
+        "minecraft:ambient_sound_interval": {
+          "event_name": "ambient",
+          "range": 0,
+          "value": 0
+        }
+      },
+      "easy_attack": {
+        "minecraft:attack": {
+          "damage": 2
+        }
+      },
+      "escape_fire": {
+        "minecraft:behavior.panic": {
+          "force": true,
+          "priority": 1,
+          "speed_multiplier": 1.25
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "randomInterval": true,
+          "time": [
+            20,
+            50
+          ],
+          "time_down_event": {
+            "event": "stop_panicking_after_fire",
+            "target": "self"
+          }
+        }
+      },
+      "find_hive": {
+        "minecraft:behavior.move_to_block": {
+          "goal_radius": 0.633, // Was tested with 0.4 when the goal radius wasn't squared (sqrt(0.4) == ~0.633).
+          "priority": 10,
+          "search_height": 10,
+          "on_reach": [
+            {
+              "event": "minecraft:bee_returned_to_hive",
+              "target": "block"
+            }
+          ],
+          "search_range": 16,
+          "target_blocks": [
+            "bee_nest",
+            "beehive"
+          ],
+          "tick_interval": 1
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 180,
+          "time_down_event": {
+            "event": "find_hive_timeout",
+            "target": "self"
+          }
+        }
+      },
+      "take_nearest_target": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "entity_types": [
+            {
+              "filters": {
+                "AND": [
+                  {
+                    "test": "is_family",
+                    "subject": 1,
+                    "operator": 0,
+                    "value": "player"
+                  }
+                ]
+              },
+              "max_dist": 10
+            }
+          ],
+          "priority": 2
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": 5,
+          "time_down_event": {
+            "event": "calmed_down",
+            "target": "self"
+          }
+        }
+      },
+      "hard_attack": {
+        "minecraft:attack": {
+          "damage": 2,
+          "effect_duration": 18,
+          "effect_name": "poison"
+        }
+      },
+      "hive_full": {
+        "minecraft:timer": {
+          "looping": false,
+          "randomInterval": true,
+          "time": [
+            5,
+            20
+          ],
+          "time_down_event": {
+            "event": "find_hive_event",
+            "target": "self"
+          }
+        }
+      },
+      "look_for_food": {
+        "minecraft:ambient_sound_interval": {
+          "event_name": "ambient.pollinate",
+          "range": 3,
+          "value": 2
+        },
+        "minecraft:behavior.move_to_block": {
+          "search_height": 4,
+          "priority": 10,
+          "goal_radius": 1,
+          "on_stay_completed": [
+            {
+              "event": "collected_nectar",
+              "target": "self"
+            }
+          ],
+          "search_range": 6,
+          "start_chance": 0.5,
+          "stay_duration": 20,
+          "target_block_filters": {
+            "operator": "==",
+            "test": "is_waterlogged",
+            "subject": "block",
+            "value": false
+          },
+          "target_blocks": [
+            "minecraft:poppy",
+            "minecraft:blue_orchid",
+            "minecraft:allium",
+            "minecraft:azure_bluet",
+            "minecraft:red_tulip",
+            "minecraft:orange_tulip",
+            "minecraft:white_tulip",
+            "minecraft:pink_tulip",
+            "minecraft:oxeye_daisy",
+            "minecraft:cornflower",
+            "minecraft:lily_of_the_valley",
+            "minecraft:dandelion",
+            "minecraft:wither_rose",
+            "minecraft:sunflower",
+            "minecraft:lilac",
+            "minecraft:rose_bush",
+            "minecraft:peony",
+            "minecraft:flowering_azalea",
+            "minecraft:azalea_leaves_flowered",
+            "minecraft:mangrove_propagule",
+            "minecraft:pitcher_plant",
+            "minecraft:torchflower",
+            "minecraft:cherry_leaves",
+            "minecraft:pink_petals",
+            "minecraft:open_eyeblossom"
+          ],
+          "target_offset": [
+            0,
+            0.25,
+            0
+          ],
+          "target_selection_method": "random",
+          "tick_interval": 1
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": 180,
+          "time_down_event": {
+            "event": "find_flower_timeout"
+          }
+        }
+      },
+      "normal_attack": {
+        "minecraft:attack": {
+          "damage": 2,
+          "effect_duration": 10,
+          "effect_name": "poison"
+        }
+      },
+      "perish": {
+        "minecraft:hurt_on_condition": {
+          "damage_conditions": [
+            {
+              "cause": "none",
+              "damage_per_tick": 999
+            }
+          ]
+        }
+      },
+      "return_to_home": {
+        "minecraft:behavior.go_home": {
+          "goal_radius": 1.2,
+          "priority": 4,
+          "interval": 1,
+          "on_failed": [
+            {
+              "event": "find_hive_event",
+              "target": "self"
+            }
+          ],
+          "on_home": [
+            {
+              "event": "minecraft:bee_returned_to_hive",
+              "filters": {
+                "any_of": [
+                  {
+                    "subject": "block",
+                    "test": "is_block",
+                    "value": "minecraft:bee_nest"
+                  },
+                  {
+                    "subject": "block",
+                    "test": "is_block",
+                    "value": "minecraft:beehive"
+                  }
+                ]
+              },
+              "target": "block"
+            },
+            {
+              "event": "find_hive_event",
+              "filters": {
+                "all_of": [
+                  {
+                    "operator": "!=",
+                    "test": "is_block",
+                    "subject": "block",
+                    "value": "minecraft:bee_nest"
+                  },
+                  {
+                    "operator": "!=",
+                    "test": "is_block",
+                    "subject": "block",
+                    "value": "minecraft:beehive"
+                  }
+                ]
+              },
+              "target": "self"
+            }
+          ],
+          "speed_multiplier": 1
+        }
+      },
+      "shelter_detection": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "seek_shelter",
+              "filters": {
+                "all_of": [
+                  {
+                    "any_of": [
+                      {
+                        "test": "is_daytime",
+                        "value": false
+                      },
+                      {
+                        "operator": "==",
+                        "test": "weather",
+                        "value": "precipitation"
+                      }
+                    ]
+                  },
+                  // Assume we are already going home if we have nectar
+                  {
+                    "domain": "minecraft:has_nectar",
+                    "operator": "!=",
+                    "test": "bool_property"
+                  },
+                  // Assume we are already going home if we have nectar
+                  {
+                    "test": "has_biome_tag",
+                    "value": "overworld"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "track_attacker": {
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        }
+      }
+    },
+    "events": {
+      "abort_sheltering": {
+        "add": {
+          "component_groups": [
+            "shelter_detection",
+            "look_for_food"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "abort_shelter_detection",
+            "return_to_home",
+            "escape_fire"
+          ]
+        }
+      },
+      "fed_wither_rose": {
+        "add": {
+          "component_groups": [
+            "add_wither_effect"
+          ]
+        }
+      },
+      "minecraft:hive_full": {
+        "add": {
+          "component_groups": [
+            "hive_full"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "find_hive",
+            "return_to_home"
+          ]
+        }
+      },
+      "fed_open_eyeblossom": {
+        "add": {
+          "component_groups": [
+            "add_poison_effect"
+          ]
+        }
+      },
+      "calmed_down": {
+        "add": {
+          "component_groups": [
+            "shelter_detection",
+            "return_to_home"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "angry_bee",
+            "take_nearest_target"
+          ]
+        }
+      },
+      "collected_nectar": {
+        "add": {
+          "component_groups": [
+            "return_to_home",
+            "has_nectar",
+            "default_sound"
+          ]
+        },
+        "set_property": {
+          "minecraft:has_nectar": true
+        },
+        "remove": {
+          "component_groups": [
+            "look_for_food"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "add": {
+                  "component_groups": [
+                    "bee_adult"
+                  ]
+                },
+                "weight": 95
+              },
+              {
+                "add": {
+                  "component_groups": [
+                    "bee_baby"
+                  ]
+                },
+                "weight": 5
+              }
+            ]
+          },
+          {
+            "add": {
+              "component_groups": [
+                "track_attacker",
+                "shelter_detection",
+                "look_for_food"
+              ]
+            }
+          }
+        ]
+      },
+      "attacked": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "angry_bee"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "take_nearest_target"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_difficulty",
+              "value": "easy"
+            },
+            "add": {
+              "component_groups": [
+                "easy_attack"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "normal_attack",
+                "hard_attack"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_difficulty",
+              "value": "normal"
+            },
+            "add": {
+              "component_groups": [
+                "normal_attack"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "easy_attack",
+                "hard_attack"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "is_difficulty",
+              "value": "hard"
+            },
+            "add": {
+              "component_groups": [
+                "hard_attack"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "easy_attack",
+                "normal_attack"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:exited_hive_on_fire": {
+        "add": {
+          "component_groups": [
+            "escape_fire"
+          ]
+        }
+      },
+      "countdown_to_perish_event": {
+        "add": {
+          "component_groups": [
+            "countdown_to_perish"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "collect_nectar",
+            "track_attacker",
+            "take_nearest_target",
+            "look_for_food",
+            "angry_bee",
+            "hive_full",
+            "find_hive",
+            "escape_fire"
+          ]
+        }
+      },
+      "find_flower_timeout": {
+        "add": {
+          "component_groups": [
+            "return_to_home"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "look_for_food"
+          ]
+        }
+      },
+      "find_hive_event": {
+        "add": {
+          "component_groups": [
+            "find_hive"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "return_to_home",
+            "hive_full"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "bee_baby",
+            "shelter_detection",
+            "track_attacker",
+            "look_for_food"
+          ]
+        }
+      },
+      "find_hive_timeout": {
+        "sequence": [
+          {
+            "filters": {
+              "domain": "minecraft:has_nectar",
+              "test": "bool_property",
+              "operator": "!="
+            },
+            "add": {
+              "component_groups": [
+                "look_for_food"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "find_hive",
+                "escape_fire"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "domain": "minecraft:has_nectar",
+              "test": "bool_property"
+            },
+            "add": {
+              "component_groups": [
+                "return_to_home"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "find_hive"
+              ]
+            }
+          }
+        ]
+      },
+      "hive_destroyed": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "is_family",
+              "operator": "!=",
+              "subject": "self",
+              "value": "pacified"
+            },
+            "add": {
+              "component_groups": [
+                "take_nearest_target"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "escape_fire"
+              ]
+            }
+          }
+        ]
+      },
+      "on_wither_effect_added": {
+        "remove": {
+          "component_groups": [
+            "add_wither_effect"
+          ]
+        }
+      },
+      "minecraft:ageable_grow_up": {
+        "add": {
+          "component_groups": [
+            "bee_adult"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "bee_baby"
+          ]
+        }
+      },
+      "minecraft:exited_disturbed_hive": {
+        "add": {
+          "component_groups": [
+            "take_nearest_target"
+          ]
+        },
+        "set_property": {
+          "minecraft:has_nectar": false
+        },
+        "remove": {
+          "component_groups": [
+            "find_hive",
+            "return_to_home",
+            "has_nectar",
+            "abort_shelter_detection",
+            "shelter_detection",
+            "escape_fire"
+          ]
+        }
+      },
+      "minecraft:exited_hive": {
+        "add": {
+          "component_groups": [
+            "look_for_food",
+            "shelter_detection"
+          ]
+        },
+        "set_property": {
+          "minecraft:has_nectar": false
+        },
+        "remove": {
+          "component_groups": [
+            "find_hive",
+            "return_to_home",
+            "has_nectar",
+            "abort_shelter_detection"
+          ]
+        }
+      },
+      "minecraft:spawn_adult": {
+        "add": {
+          "component_groups": [
+            "bee_adult",
+            "shelter_detection",
+            "track_attacker",
+            "look_for_food"
+          ]
+        }
+      },
+      "on_poison_effect_added": {
+        "remove": {
+          "component_groups": [
+            "add_poison_effect"
+          ]
+        }
+      },
+      "perish_event": {
+        "add": {
+          "component_groups": [
+            "perish"
+          ]
+        }
+      },
+      "seek_shelter": {
+        "add": {
+          "component_groups": [
+            "default_sound",
+            "return_to_home",
+            "abort_shelter_detection"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "look_for_food",
+            "collect_nectar",
+            "shelter_detection"
+          ]
+        }
+      },
+      "stop_panicking_after_fire": {
+        "remove": {
+          "component_groups": [
+            "escape_fire"
+          ]
+        }
+      }
+    }
+  }
+}

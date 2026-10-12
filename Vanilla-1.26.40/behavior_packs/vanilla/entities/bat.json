@@ -1,0 +1,112 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:bat",
+      "is_experimental": false,
+      "is_summonable": true,
+      "is_spawnable": true,
+      "spawn_category": "ambient"
+    },
+    "components": {
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.float_wander": {
+        "float_duration": [
+          0.1,
+          0.35
+        ],
+        "float_wander_has_move_control": false,
+        "random_reselect": true,
+        "y_offset": -2.0,
+        "use_home_position_restriction": false,
+        "xz_dist": 10,
+        "y_dist": 7
+      },
+      "minecraft:breathable": {
+        "breathes_lava": false,
+        "suffocate_time": 0,
+        "total_supply": 15
+      },
+      "minecraft:can_fly": {},
+      "minecraft:collision_box": {
+        "height": 0.9,
+        "width": 0.5
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": "no"
+        }
+      },
+      "minecraft:despawn": {
+        "filters": [
+          {
+            "all_of": [
+              {
+                "test": "is_persistent",
+                "value": false
+              },
+              {
+                "operator": "<",
+                "test": "light_level",
+                "value": 8
+              },
+              {
+                "subject": "self",
+                "test": "inactivity_timer",
+                "value": 600
+              },
+              {
+                "test": "random_chance",
+                "value": 50
+              },
+              {
+                "operator": ">",
+                "test": "distance_to_nearest_player",
+                "value": 54
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:health": {
+        "max": 6,
+        "value": 6
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "cause": "lava",
+            "damage_per_tick": 4,
+            "filters": {
+              "operator": "==",
+              "test": "in_lava",
+              "subject": "self",
+              "value": true
+            }
+          }
+        ]
+      },
+      "minecraft:jump.static": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:nameable": {},
+      "minecraft:navigation.float": {
+        "can_path_over_water": true,
+        "using_door_annotation": true
+      },
+      "minecraft:physics": {},
+      "minecraft:type_family": {
+        "family": [
+          "bat",
+          "mob"
+        ]
+      }
+    },
+    "events": {}
+  }
+}

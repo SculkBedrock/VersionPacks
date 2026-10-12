@@ -1,0 +1,15 @@
+[
+  {
+    "FailReason": "MultiplayerDisabled",
+    "OverrideStrings": {
+      "Title": "disconnectionScreen.noReason"
+    }
+  },
+  {
+    "FailReason": "Kicked",
+    "OverrideStrings": {
+      "Title": "disconnectionScreen.noReason",
+      "Body": "disconnect.removed"
+    }
+  }
+]

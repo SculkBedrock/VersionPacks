@@ -1,0 +1,39 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Library for building server driven Editor UI",
+        "name": "Server Editor Library",
+        "uuid": "bd153b33-db00-4da4-8a6f-293371711e97",
+        "version": [
+            0,
+            0,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            14,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Server Editor Library JS",
+            "type": "data",
+            "uuid": "d54883bb-bec3-4762-964d-633ac2ddd6e0",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "beta"
+        }
+    ],
+    "capabilities": [
+        "editorExtension"
+    ]
+}

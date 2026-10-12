@@ -1,0 +1,465 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:zombie",
+      "is_experimental": false,
+      "is_summonable": true,
+      "is_spawnable": true,
+      "spawn_category": "monster"
+    },
+    "components": {
+      "minecraft:annotation.break_door": {},
+      "minecraft:attack": {
+        "damage": 3
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "look_time": {
+          "min": 1,
+          "max": 2
+        },
+        "look_distance": 6,
+        "priority": 7
+      },
+      // Zombie Behaviors
+      "minecraft:behavior.melee_attack": {
+        "priority": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "reselect_targets": true,
+        "set_persistent": true,
+        "must_see": true,
+        "within_radius": 25,
+        "must_see_forget_duration": 17,
+        "entity_types": [
+          {
+            "filters": {
+              "AND": [
+                {
+                  "OR": [
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "irongolem"
+                    }
+                  ]
+                }
+              ]
+            },
+            "max_dist": 35
+          },
+          {
+            "filters": {
+              "AND": [
+                {
+                  "OR": [
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "villager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "wandering_trader"
+                    }
+                  ]
+                }
+              ]
+            },
+            "max_dist": 35,
+            "must_see": false
+          },
+          {
+            "filters": {
+              "AND": [
+                {
+                  "test": "is_family",
+                  "subject": 1,
+                  "operator": 0,
+                  "value": "baby_turtle"
+                },
+                {
+                  "test": "in_water",
+                  "subject": 1,
+                  "operator": 1,
+                  "value": true
+                }
+              ]
+            },
+            "max_dist": 35
+          }
+        ],
+        "priority": 2
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.stomp_turtle_egg": {
+        "goal_radius": 1.14,
+        "priority": 4,
+        "search_height": 3,
+        "interval": 20,
+        "search_range": 10,
+        "speed_multiplier": 1
+      },
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_lava": false,
+        "breathes_water": true,
+        "suffocate_time": 0,
+        "total_supply": 15
+      },
+      "minecraft:burns_in_daylight": {},
+      "minecraft:can_climb": {},
+      "minecraft:collision_box": {
+        "height": 1.9,
+        "width": 0.6
+      },
+      "minecraft:despawn": {
+        "filters": [
+          {
+            "all_of": [
+              {
+                "test": "is_persistent",
+                "value": false
+              },
+              {
+                "operator": ">=",
+                "test": "light_level",
+                "value": 8
+              },
+              {
+                "test": "is_daytime",
+                "value": true
+              },
+              {
+                "subject": "self",
+                "test": "inactivity_timer",
+                "value": 600
+              },
+              {
+                "test": "random_chance",
+                "value": 50
+              },
+              {
+                "operator": ">",
+                "test": "distance_to_nearest_player",
+                "value": 54
+              },
+              {
+                "test": "surface_mob",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:environment_sensor": {
+        "triggers": {
+          "event": "minecraft:start_transforming",
+          "filters": {
+            "operator": "==",
+            "test": "is_underwater",
+            "value": true
+          }
+        }
+      },
+      "minecraft:health": {
+        "max": 20,
+        "value": 20
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "cause": "lava",
+            "damage_per_tick": 4,
+            "filters": {
+              "operator": "==",
+              "test": "in_lava",
+              "subject": "self",
+              "value": true
+            }
+          }
+        ]
+      },
+      "minecraft:jump.static": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/zombie.json"
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:nameable": {},
+      "minecraft:navigation.walk": {
+        "can_break_doors": true,
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_walk": true,
+        "using_door_annotation": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      // Zombie Components
+      "minecraft:type_family": {
+        "family": [
+          "zombie",
+          "undead",
+          "monster",
+          "mob"
+        ]
+      }
+    },
+    "component_groups": {
+      "minecraft:can_have_equipment": {
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/zombie_equipment.json"
+        }
+      },
+      "minecraft:convert_to_baby_drowned": {
+        "minecraft:is_shaking": {},
+        "minecraft:transformation": {
+          "delay": {
+            "value": 15
+          },
+          "drop_equipment": true,
+          "into": "minecraft:drowned<minecraft:as_baby>",
+          "transformation_sound": "convert_to_drowned"
+        }
+      },
+      "minecraft:look_to_start_drowned_transformation": {
+        "minecraft:environment_sensor": {
+          "triggers": {
+            "event": "minecraft:start_transforming",
+            "filters": {
+              "operator": "==",
+              "test": "is_underwater",
+              "subject": "self",
+              "value": true
+            }
+          }
+        }
+      },
+      "minecraft:convert_to_drowned": {
+        "minecraft:is_shaking": {},
+        "minecraft:transformation": {
+          "delay": {
+            "value": 15
+          },
+          "drop_equipment": true,
+          "into": "minecraft:drowned<minecraft:as_adult>",
+          "transformation_sound": "convert_to_drowned"
+        }
+      },
+      "minecraft:start_drowned_transformation": {
+        "minecraft:environment_sensor": {
+          "triggers": {
+            "event": "minecraft:stop_transforming",
+            "filters": {
+              "operator": "==",
+              "test": "is_underwater",
+              "subject": "self",
+              "value": false
+            }
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 30,
+          "time_down_event": {
+            "event": "minecraft:convert_to_drowned"
+          }
+        }
+      },
+      "minecraft:zombie_adult": {
+        "minecraft:behavior.mount_pathing": {
+          "priority": 2,
+          "target_dist": 0,
+          "speed_multiplier": 1.25,
+          "track_target": true
+        },
+        "minecraft:experience_reward": {
+          "on_death": {
+            "expression": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0",
+            "version": 0
+          }
+        },
+        "minecraft:movement": {
+          "value": 0.23
+        },
+        "minecraft:rideable": {
+          "family_types": [
+            "zombie"
+          ],
+          "seat_count": 1,
+          "seats": {
+            "lock_rider_rotation": 0,
+            "position": [
+              0,
+              1.1,
+              -0.35
+            ]
+          }
+        }
+      },
+      "minecraft:zombie_baby": {
+        "minecraft:experience_reward": {
+          "on_death": {
+            "expression": "query.last_hit_by_player ? 12 + (query.equipment_count * Math.Random(1,3)) : 0",
+            "version": 0
+          }
+        },
+        "minecraft:is_baby": {},
+        "minecraft:movement": {
+          "value": 0.35
+        },
+        "minecraft:scale": {
+          "value": 0.5
+        }
+      },
+      "minecraft:zombie_jockey": {
+        "minecraft:behavior.find_mount": {
+          "max_failed_attempts": 20,
+          "priority": 1,
+          "start_delay": 15,
+          "within_radius": 16
+        }
+      }
+    },
+    "events": {
+      "minecraft:as_adult": {
+        "add": {
+          "component_groups": [
+            "minecraft:zombie_adult"
+          ]
+        }
+      },
+      "minecraft:stop_transforming": {
+        "add": {
+          "component_groups": [
+            "minecraft:look_to_start_drowned_transformation"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:start_drowned_transformation"
+          ]
+        }
+      },
+      "minecraft:start_transforming": {
+        "add": {
+          "component_groups": [
+            "minecraft:start_drowned_transformation"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:look_to_start_drowned_transformation"
+          ]
+        }
+      },
+      "minecraft:as_baby": {
+        "add": {
+          "component_groups": [
+            "minecraft:zombie_baby"
+          ]
+        }
+      },
+      "minecraft:convert_to_drowned": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_component",
+              "operator": "!=",
+              "value": "minecraft:is_baby"
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:convert_to_drowned"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "minecraft:start_drowned_transformation"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "has_component",
+              "value": "minecraft:is_baby"
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:convert_to_baby_drowned"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "minecraft:start_drowned_transformation"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_adult",
+                "minecraft:can_have_equipment"
+              ]
+            },
+            "remove": {},
+            "weight": 380
+          },
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_baby",
+                "minecraft:can_have_equipment"
+              ]
+            },
+            "remove": {},
+            "weight": 17
+          },
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_baby",
+                "minecraft:zombie_jockey",
+                "minecraft:can_have_equipment"
+              ]
+            },
+            "remove": {},
+            "weight": 3
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,650 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:zombie_horse",
+      "is_summonable": true,
+      "is_spawnable": true,
+      "properties": {
+        "minecraft:was_upgraded_to_1_21_130": {
+          "client_sync": false,
+          "default": false,
+          "type": "bool"
+        }
+      },
+      "spawn_category": "monster"
+    },
+    "components": {
+      "minecraft:ambient_sound_interval": {},
+      "minecraft:balloonable": {},
+      "minecraft:behavior.flee_sun": {
+        "priority": 1,
+        "speed_multiplier": 1.2
+      },
+      // Used exclusively to dismount the passenger.
+      "minecraft:behavior.float": {
+        "chance_per_tick_to_float": 0,
+        "priority": 0,
+        "time_under_water_to_dismount_passengers": 2
+      },
+      "minecraft:behavior.look_at_player": {
+        "look_distance": 6,
+        "priority": 7
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.tempt": {
+        "items": [
+          "red_mushroom"
+        ],
+        "priority": 3,
+        "speed_multiplier": 1.2
+      },
+      "minecraft:breathable": {
+        "breathes_water": true,
+        "suffocate_time": 0,
+        "total_supply": 15
+      },
+      "minecraft:buoyant": {
+        "apply_gravity": false,
+        "base_buoyancy": 1,
+        "can_auto_step_from_liquid": true,
+        "liquid_blocks": [
+          "minecraft:water",
+          "minecraft:flowing_water",
+          "minecraft:lava",
+          "minecraft:flowing_lava"
+        ],
+        "movement_type": "bobbing"
+      },
+      "minecraft:burns_in_daylight": {
+        "protection_slot": "slot.armor.body"
+      },
+      "minecraft:collision_box": {
+        "height": 1.6,
+        "width": 1.4
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "event": "minecraft:upgrade_to_1_21_130",
+            "filters": {
+              "domain": "minecraft:was_upgraded_to_1_21_130",
+              "operator": "!=",
+              "test": "bool_property"
+            }
+          }
+        ]
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "heal_amount": 3,
+            "item": "red_mushroom"
+          }
+        ]
+      },
+      "minecraft:health": {
+        "max": 25,
+        "value": 25
+      },
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_max": 0.7,
+          "range_min": 0.5
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "cause": "lava",
+            "damage_per_tick": 4,
+            "filters": {
+              "test": "in_lava"
+            }
+          }
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:jump.static": {},
+      "minecraft:movement": {
+        "value": {
+          "range_max": 0.275,
+          "range_min": 0.205
+        }
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:nameable": {},
+      "minecraft:navigation.walk": {
+        "avoid_damage_blocks": true,
+        "avoid_sun": true,
+        "is_amphibious": true,
+        "avoid_water": true,
+        "blocks_to_avoid": [
+          "minecraft:rail",
+          "minecraft:activator_rail",
+          "minecraft:detector_rail",
+          "minecraft:golden_rail"
+        ]
+      },
+      "minecraft:offspring": {
+        "offspring_pairs": {
+          "minecraft:zombie_horse": "minecraft:zombie_horse"
+        }
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:spawn_egg_interaction": {},
+      "minecraft:type_family": {
+        "family": [
+          "zombiehorse",
+          "undead",
+          "mob"
+        ]
+      }
+    },
+    "component_groups": {
+      "minecraft:horse_adult": {
+        "minecraft:behavior.mount_pathing": {
+          "priority": 2,
+          "target_dist": 0,
+          "speed_multiplier": 1.5,
+          "track_target": true
+        },
+        "minecraft:behavior.run_around_like_crazy": {
+          "priority": 1,
+          "speed_multiplier": 1.2
+        },
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "accepted_items": [
+                "saddle"
+              ],
+              "item": "saddle",
+              "on_equip": {
+                "event": "minecraft:horse_saddled"
+              },
+              "on_unequip": {
+                "event": "minecraft:horse_unsaddled"
+              },
+              "slot": 0
+            },
+            {
+              "accepted_items": [
+                "horsearmorleather",
+                "horsearmoriron",
+                "horsearmorgold",
+                "horsearmordiamond",
+                "minecraft:copper_horse_armor",
+                "minecraft:netherite_horse_armor"
+              ],
+              "item": "horsearmoriron",
+              "slot": 1
+            }
+          ]
+        },
+        "minecraft:experience_reward": {
+          "on_death": {
+            "expression": "query.last_hit_by_player ? Math.Random(1,3) : 0",
+            "version": 13
+          }
+        },
+        "minecraft:leashable_to": {},
+        "minecraft:loot": {
+          "table": "loot_tables/entities/zombie_horse.json"
+        }
+      },
+      "minecraft:horse_wild": {
+        "minecraft:behavior.mount_pathing": {
+          "priority": 2,
+          "target_dist": 0,
+          "speed_multiplier": 1.5,
+          "track_target": true
+        },
+        "minecraft:rideable": {
+          "family_types": [
+            "player",
+            "zombie_rider",
+            "baby_undead"
+          ],
+          "interact_text": "action.interact.mount",
+          "seat_count": 1,
+          "seats": {
+            "position": [
+              0,
+              1.1,
+              -0.2
+            ]
+          }
+        },
+        "minecraft:tamemount": {
+          "auto_reject_items": [
+            {
+              "item": "horsearmorleather"
+            },
+            {
+              "item": "horsearmoriron"
+            },
+            {
+              "item": "horsearmorgold"
+            },
+            {
+              "item": "horsearmordiamond"
+            },
+            {
+              "item": "minecraft:copper_horse_armor"
+            },
+            {
+              "item": "minecraft:netherite_horse_armor"
+            },
+            {
+              "item": "saddle"
+            }
+          ],
+          "max_temper": 100,
+          "ride_text": "action.interact.mount",
+          "feed_items": [
+            {
+              "item": "red_mushroom",
+              "temper_mod": 10
+            }
+          ],
+          "feed_text": "action.interact.feed",
+          "min_temper": 0,
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:horse_baby": {
+        "minecraft:behavior.follow_parent": {
+          "priority": 4,
+          "speed_multiplier": 1
+        },
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        }
+      },
+      "minecraft:horse_can_be_leashed": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "minecraft:hostile_mounted",
+              "filters": {
+                "subject": "self",
+                "test": "is_controlling_passenger_family",
+                "value": "zombie"
+              }
+            }
+          ]
+        },
+        "minecraft:leashable": {
+          "on_unleash": {
+            "event": "minecraft:on_unleashed",
+            "target": "self"
+          },
+          "presets": [
+            {
+              "filter": {
+                "subject": "other",
+                "test": "is_family",
+                "value": "happy_ghast"
+              },
+              "spring_type": "quad_dampened"
+            },
+            {
+              "hard_distance": 10,
+              "max_distance": 14
+            }
+          ]
+        }
+      },
+      "minecraft:horse_saddled": {
+        "minecraft:behavior.player_ride_tamed": {},
+        "minecraft:can_power_jump": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:is_saddled": {}
+      },
+      "minecraft:horse_tamed": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "equip_item_slot": "1",
+              "play_sounds": "armor.equip_generic",
+              "interact_text": "action.interact.equiphorsearmor",
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "domain": "inventory",
+                      "operator": "not",
+                      "test": "has_equipment_tag",
+                      "value": "minecraft:horse_armor"
+                    },
+                    {
+                      "domain": "hand",
+                      "subject": "player",
+                      "test": "has_equipment_tag",
+                      "value": "minecraft:horse_armor"
+                    },
+                    {
+                      "subject": "other",
+                      "test": "is_sneak_held",
+                      "value": false
+                    }
+                  ]
+                },
+                "target": "self"
+              }
+            },
+            {
+              "drop_item_slot": "1",
+              "drop_item_y_offset": 1.1,
+              "hurt_item": 1,
+              "interact_text": "action.interact.removehorsearmor",
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "rider_count",
+                      "value": 0
+                    },
+                    {
+                      "domain": "inventory",
+                      "test": "has_equipment_tag",
+                      "value": "minecraft:horse_armor"
+                    },
+                    {
+                      "domain": "hand",
+                      "subject": "other",
+                      "test": "has_equipment",
+                      "value": "shears"
+                    },
+                    {
+                      "subject": "other",
+                      "test": "is_sneak_held",
+                      "value": false
+                    }
+                  ]
+                }
+              },
+              "play_sounds": "armor.unequip_generic",
+              "vibration": "shear"
+            },
+            {
+              "equip_item_slot": "0",
+              "interact_text": "action.interact.saddle",
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "domain": "inventory",
+                      "operator": "not",
+                      "test": "has_equipment",
+                      "value": "saddle"
+                    },
+                    {
+                      "domain": "hand",
+                      "subject": "other",
+                      "test": "has_equipment",
+                      "value": "saddle"
+                    },
+                    {
+                      "subject": "other",
+                      "test": "is_sneak_held",
+                      "value": false
+                    }
+                  ]
+                },
+                "target": "self"
+              }
+            },
+            {
+              "drop_item_slot": "0",
+              "drop_item_y_offset": 1.1,
+              "hurt_item": 1,
+              "interact_text": "action.interact.removesaddle",
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "rider_count",
+                      "value": 0
+                    },
+                    {
+                      "domain": "inventory",
+                      "test": "has_equipment",
+                      "value": "saddle"
+                    },
+                    {
+                      "domain": "hand",
+                      "subject": "other",
+                      "test": "has_equipment",
+                      "value": "shears"
+                    },
+                    {
+                      "subject": "other",
+                      "test": "is_sneak_held",
+                      "value": false
+                    }
+                  ]
+                }
+              },
+              "play_sounds": "unsaddle",
+              "vibration": "shear"
+            }
+          ]
+        },
+        "minecraft:inventory": {
+          "container_type": "horse",
+          "inventory_size": 2
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:rideable": {
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seat_count": 1,
+          "seats": {
+            "position": [
+              0,
+              1.1,
+              -0.2
+            ]
+          }
+        }
+      },
+      "minecraft:horse_wild_with_rider": {
+        "minecraft:addrider": {
+          "riders": [
+            {
+              "entity_type": "minecraft:zombie",
+              "spawn_event": "minecraft:spawn_as_rider"
+            }
+          ]
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "minecraft:hostile_dismounted",
+              "filters": {
+                "subject": "self",
+                "test": "rider_count",
+                "value": 0
+              }
+            }
+          ]
+        }
+      }
+    },
+    "events": {
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "minecraft:horse_baby"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "trigger": "minecraft:spawn_adult",
+            "weight": 36
+          },
+          {
+            "trigger": "minecraft:entity_born",
+            "weight": 9
+          }
+        ]
+      },
+      "minecraft:on_tame": {
+        "add": {
+          "component_groups": [
+            "minecraft:horse_tamed"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:horse_wild"
+          ]
+        }
+      },
+      "minecraft:hostile_dismounted": {
+        "add": {
+          "component_groups": [
+            "minecraft:horse_can_be_leashed"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:horse_wild_with_rider"
+          ]
+        }
+      },
+      "minecraft:horse_saddled": {
+        "add": {
+          "component_groups": [
+            "minecraft:horse_saddled"
+          ]
+        },
+        "play_sound": {
+          "sound": "saddle"
+        }
+      },
+      "minecraft:horse_unsaddled": {
+        "remove": {
+          "component_groups": [
+            "minecraft:horse_saddled"
+          ]
+        }
+      },
+      "minecraft:hostile_mounted": {
+        "add": {
+          "component_groups": [
+            "minecraft:horse_wild_with_rider"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:horse_can_be_leashed"
+          ]
+        }
+      },
+      "minecraft:spawn_adult": {
+        "add": {
+          "component_groups": [
+            "minecraft:horse_adult",
+            "minecraft:horse_wild",
+            "minecraft:horse_can_be_leashed"
+          ]
+        }
+      },
+      "minecraft:spawn_adult_with_rider": {
+        "add": {
+          "component_groups": [
+            "minecraft:horse_adult",
+            "minecraft:horse_wild",
+            "minecraft:horse_wild_with_rider"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:horse_baby",
+            "minecraft:horse_can_be_leashed"
+          ]
+        }
+      },
+      "minecraft:spawn_tame_adult": {
+        "add": {
+          "component_groups": [
+            "minecraft:horse_adult",
+            "minecraft:horse_tamed",
+            "minecraft:horse_can_be_leashed"
+          ]
+        }
+      },
+      "minecraft:upgrade_to_1_21_130": {
+        "sequence": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_component",
+                  "operator": "!=",
+                  "value": "minecraft:rideable"
+                },
+                {
+                  "test": "is_baby",
+                  "value": false
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:horse_tamed"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_component",
+                  "operator": "!=",
+                  "value": "minecraft:leashable"
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:horse_can_be_leashed"
+              ]
+            }
+          },
+          {
+            "set_property": {
+              "minecraft:was_upgraded_to_1_21_130": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

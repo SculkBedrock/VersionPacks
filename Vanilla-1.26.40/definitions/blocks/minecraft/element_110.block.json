@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:element_110",
+      "states": {}
+    },
+    "components": {},
+    "permutations": [],
+    "sc:default_state": {},
+    "sc:protocol_runtime_ids": [
+      10493
+    ]
+  }
+}

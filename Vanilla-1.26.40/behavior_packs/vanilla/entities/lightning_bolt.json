@@ -1,0 +1,20 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:lightning_bolt",
+      "is_experimental": false,
+      "is_summonable": true,
+      "is_spawnable": false,
+      "spawn_category": "misc"
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "lightning"
+        ]
+      }
+    },
+    "events": {}
+  }
+}

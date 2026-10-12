@@ -1,0 +1,75 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:turtle_egg",
+      "states": {
+        "cracked_state": [
+          "cracked",
+          "max_cracked",
+          "no_cracks"
+        ],
+        "turtle_egg_count": [
+          "four_egg",
+          "one_egg",
+          "three_egg",
+          "two_egg"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.5,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:drops": {
+        "enabled": true,
+        "mode": "independent",
+        "entries": [
+          {
+            "item": "minecraft:turtle_egg",
+            "chance": 1.0,
+            "count": [
+              {
+                "value": 1,
+                "chance": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "cracked_state": "no_cracks",
+      "turtle_egg_count": "one_egg"
+    },
+    "sc:protocol_runtime_ids": [
+      16447,
+      16444,
+      16446,
+      16445,
+      16451,
+      16448,
+      16450,
+      16449,
+      16443,
+      16440,
+      16442,
+      16441
+    ]
+  }
+}

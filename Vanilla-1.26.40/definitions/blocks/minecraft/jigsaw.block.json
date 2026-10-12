@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:jigsaw",
+      "states": {
+        "facing_direction": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "rotation": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "sc:unbreakable": {}
+    },
+    "permutations": [],
+    "sc:default_state": {
+      "facing_direction": 0,
+      "rotation": 0
+    },
+    "sc:protocol_runtime_ids": [
+      8950,
+      8956,
+      8962,
+      8968,
+      8951,
+      8957,
+      8963,
+      8969,
+      8952,
+      8958,
+      8964,
+      8970,
+      8953,
+      8959,
+      8965,
+      8971,
+      8954,
+      8960,
+      8966,
+      8972,
+      8955,
+      8961,
+      8967,
+      8973
+    ]
+  }
+}

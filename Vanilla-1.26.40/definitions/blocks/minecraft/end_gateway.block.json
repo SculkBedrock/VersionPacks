@@ -1,0 +1,17 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:end_gateway",
+      "states": {}
+    },
+    "components": {
+      "sc:unbreakable": {}
+    },
+    "permutations": [],
+    "sc:default_state": {},
+    "sc:protocol_runtime_ids": [
+      856
+    ]
+  }
+}
