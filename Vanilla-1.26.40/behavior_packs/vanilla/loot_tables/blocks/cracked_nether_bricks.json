@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:cracked_nether_bricks",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

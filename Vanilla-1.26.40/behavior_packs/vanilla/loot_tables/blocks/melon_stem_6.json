@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:melon_seeds",
+          "chance": 0.8483,
+          "count": [
+            {
+              "value": 1,
+              "chance": 0.4694094070493929
+            },
+            {
+              "value": 2,
+              "chance": 0.4107037604621006
+            },
+            {
+              "value": 3,
+              "chance": 0.1198868324885065
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

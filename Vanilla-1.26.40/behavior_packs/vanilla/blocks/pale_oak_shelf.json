@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:pale_oak_shelf",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "powered_bit": [
+          false,
+          true
+        ],
+        "powered_shelf_type": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 2.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 2.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/pale_oak_shelf.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      11542,
+      11546,
+      11550,
+      11554,
+      11558,
+      11562,
+      11566,
+      11570,
+      11545,
+      11549,
+      11553,
+      11557,
+      11561,
+      11565,
+      11569,
+      11573,
+      11544,
+      11548,
+      11552,
+      11556,
+      11560,
+      11564,
+      11568,
+      11572,
+      11543,
+      11547,
+      11551,
+      11555,
+      11559,
+      11563,
+      11567,
+      11571
+    ]
+  }
+}

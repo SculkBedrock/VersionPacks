@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:nether_wart",
+          "count": [
+            {
+              "value": 2,
+              "chance": 0.3333333333333333
+            },
+            {
+              "value": 3,
+              "chance": 0.3333333333333333
+            },
+            {
+              "value": 4,
+              "chance": 0.3333333333333333
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

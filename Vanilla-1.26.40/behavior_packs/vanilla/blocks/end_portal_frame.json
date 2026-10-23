@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:end_portal_frame",
+      "default_states": {
+        "end_portal_eye_bit": [
+          false,
+          true
+        ],
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ]
+      }
+    },
+    "components": {
+      "sc:unbreakable": {}
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      12895,
+      12898,
+      12897,
+      12896,
+      12899,
+      12902,
+      12901,
+      12900
+    ]
+  }
+}

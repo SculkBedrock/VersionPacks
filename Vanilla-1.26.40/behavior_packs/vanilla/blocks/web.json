@@ -1,0 +1,101 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:web",
+      "default_states": {}
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 4.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 4.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_sword"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 15.0
+          },
+          {
+            "items": [
+              "minecraft:golden_sword"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 15.0
+          },
+          {
+            "items": [
+              "minecraft:stone_sword"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 15.0
+          },
+          {
+            "items": [
+              "minecraft:copper_sword"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 15.0
+          },
+          {
+            "items": [
+              "minecraft:iron_sword"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 15.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_sword"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 15.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 15.0
+          },
+          {
+            "items": [
+              "minecraft:shears"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 15.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/web.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      13651
+    ]
+  }
+}

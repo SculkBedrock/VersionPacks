@@ -1,0 +1,279 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:polished_cinnabar_wall",
+      "default_states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 1.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 1.5,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/polished_cinnabar_wall.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      6988,
+      6989,
+      7042,
+      7043,
+      7096,
+      7097,
+      7006,
+      7007,
+      7060,
+      7061,
+      7114,
+      7115,
+      7024,
+      7025,
+      7078,
+      7079,
+      7132,
+      7133,
+      6990,
+      6991,
+      7044,
+      7045,
+      7098,
+      7099,
+      7008,
+      7009,
+      7062,
+      7063,
+      7116,
+      7117,
+      7026,
+      7027,
+      7080,
+      7081,
+      7134,
+      7135,
+      6992,
+      6993,
+      7046,
+      7047,
+      7100,
+      7101,
+      7010,
+      7011,
+      7064,
+      7065,
+      7118,
+      7119,
+      7028,
+      7029,
+      7082,
+      7083,
+      7136,
+      7137,
+      6994,
+      6995,
+      7048,
+      7049,
+      7102,
+      7103,
+      7012,
+      7013,
+      7066,
+      7067,
+      7120,
+      7121,
+      7030,
+      7031,
+      7084,
+      7085,
+      7138,
+      7139,
+      6996,
+      6997,
+      7050,
+      7051,
+      7104,
+      7105,
+      7014,
+      7015,
+      7068,
+      7069,
+      7122,
+      7123,
+      7032,
+      7033,
+      7086,
+      7087,
+      7140,
+      7141,
+      6998,
+      6999,
+      7052,
+      7053,
+      7106,
+      7107,
+      7016,
+      7017,
+      7070,
+      7071,
+      7124,
+      7125,
+      7034,
+      7035,
+      7088,
+      7089,
+      7142,
+      7143,
+      7000,
+      7001,
+      7054,
+      7055,
+      7108,
+      7109,
+      7018,
+      7019,
+      7072,
+      7073,
+      7126,
+      7127,
+      7036,
+      7037,
+      7090,
+      7091,
+      7144,
+      7145,
+      7002,
+      7003,
+      7056,
+      7057,
+      7110,
+      7111,
+      7020,
+      7021,
+      7074,
+      7075,
+      7128,
+      7129,
+      7038,
+      7039,
+      7092,
+      7093,
+      7146,
+      7147,
+      7004,
+      7005,
+      7058,
+      7059,
+      7112,
+      7113,
+      7022,
+      7023,
+      7076,
+      7077,
+      7130,
+      7131,
+      7040,
+      7041,
+      7094,
+      7095,
+      7148,
+      7149
+    ]
+  }
+}

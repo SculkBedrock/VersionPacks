@@ -1,0 +1,774 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:resin_clump",
+      "default_states": {
+        "multi_face_direction_bits": [
+          0,
+          1,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          2,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          3,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          4,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          5,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          6,
+          60,
+          61,
+          62,
+          63,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.2
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.2,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/resin_clump.json"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 0",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 1",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 10",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 11",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 12",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 13",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 14",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 15",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 16",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 17",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 18",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 19",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 2",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 20",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 21",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 22",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 23",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 24",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 25",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 26",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 27",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 28",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 29",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 3",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 30",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 31",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 32",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 33",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 34",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 35",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 36",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 37",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 38",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 39",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 4",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 40",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 41",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 42",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 43",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 44",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 45",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 46",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 47",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 48",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 49",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 5",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 50",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 51",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 52",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 53",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 54",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 55",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 56",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 57",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 58",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 59",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 6",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 60",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 61",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 62",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 63",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 7",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 8",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 9",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 10",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 12",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 17",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 18",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 20",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 24",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 33",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 34",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 36",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 40",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 48",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 5",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 6",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 9",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 15",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 23",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 27",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 29",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 30",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 39",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 43",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 45",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 46",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 51",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 53",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 54",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 57",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 58",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 60",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 1",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 16",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 2",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 32",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 4",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 8",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 31",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 47",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 55",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 59",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 61",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 62",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 0",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_5.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:resin_clump','multi_face_direction_bits') == 63",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/resin_clump_6.json"
+          }
+        }
+      }
+    ],
+    "sc:protocol_runtime_ids": [
+      2960,
+      2961,
+      2970,
+      2971,
+      2972,
+      2973,
+      2974,
+      2975,
+      2976,
+      2977,
+      2978,
+      2979,
+      2962,
+      2980,
+      2981,
+      2982,
+      2983,
+      2984,
+      2985,
+      2986,
+      2987,
+      2988,
+      2989,
+      2963,
+      2990,
+      2991,
+      2992,
+      2993,
+      2994,
+      2995,
+      2996,
+      2997,
+      2998,
+      2999,
+      2964,
+      3000,
+      3001,
+      3002,
+      3003,
+      3004,
+      3005,
+      3006,
+      3007,
+      3008,
+      3009,
+      2965,
+      3010,
+      3011,
+      3012,
+      3013,
+      3014,
+      3015,
+      3016,
+      3017,
+      3018,
+      3019,
+      2966,
+      3020,
+      3021,
+      3022,
+      3023,
+      2967,
+      2968,
+      2969
+    ]
+  }
+}

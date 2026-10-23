@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:dead_tube_coral_block",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:oxidized_copper_door",
+      "default_states": {
+        "door_hinge_bit": [
+          false,
+          true
+        ],
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "open_bit": [
+          false,
+          true
+        ],
+        "upper_block_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 3.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 3.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": false,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": false,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/oxidized_copper_door.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      17462,
+      17470,
+      17466,
+      17474,
+      17465,
+      17473,
+      17469,
+      17477,
+      17464,
+      17472,
+      17468,
+      17476,
+      17463,
+      17471,
+      17467,
+      17475,
+      17478,
+      17486,
+      17482,
+      17490,
+      17481,
+      17489,
+      17485,
+      17493,
+      17480,
+      17488,
+      17484,
+      17492,
+      17479,
+      17487,
+      17483,
+      17491
+    ]
+  }
+}

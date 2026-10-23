@@ -1,0 +1,23 @@
+{
+  "source": "minecraft-java-client-jar",
+  "data_version": "26.3",
+  "namespace": "minecraft",
+  "jar_sha1": "e877b6a07acd633fb3bb475002175cec036e7b87",
+  "extracted_utc": "2026-10-17T15:24:03Z",
+  "fingerprint_algorithm": "fnv1a64 over sorted 'category|ns/path|fnv64' lines",
+  "closure_fingerprint": "606528fd40c7550b",
+  "categories": {
+    "density_function": {
+      "files": 55,
+      "bytes": 328221
+    },
+    "noise": {
+      "files": 64,
+      "bytes": 6392
+    },
+    "noise_settings": {
+      "files": 7,
+      "bytes": 26207
+    }
+  }
+}

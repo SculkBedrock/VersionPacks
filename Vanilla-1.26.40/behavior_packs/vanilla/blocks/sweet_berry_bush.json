@@ -1,0 +1,213 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:sweet_berry_bush",
+      "default_states": {
+        "growth": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/sweet_berry_bush.json"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 0",
+        "components": {
+          "sc:mining": {
+            "formula_version": 1,
+            "default": {
+              "can_mine": true,
+              "harvest": true,
+              "speed_multiplier": 1.0
+            },
+            "enchantments": {
+              "minecraft:efficiency": {
+                "max_level": 5
+              }
+            },
+            "base_time_seconds": 0.0
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 1",
+        "components": {
+          "sc:mining": {
+            "formula_version": 1,
+            "default": {
+              "can_mine": true,
+              "harvest": true,
+              "speed_multiplier": 1.0
+            },
+            "enchantments": {
+              "minecraft:efficiency": {
+                "max_level": 5
+              }
+            },
+            "base_time_seconds": 0.25
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 2",
+        "components": {
+          "sc:mining": {
+            "formula_version": 1,
+            "default": {
+              "can_mine": true,
+              "harvest": true,
+              "speed_multiplier": 1.0
+            },
+            "enchantments": {
+              "minecraft:efficiency": {
+                "max_level": 5
+              }
+            },
+            "base_time_seconds": 0.25
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 3",
+        "components": {
+          "sc:mining": {
+            "formula_version": 1,
+            "default": {
+              "can_mine": true,
+              "harvest": true,
+              "speed_multiplier": 1.0
+            },
+            "enchantments": {
+              "minecraft:efficiency": {
+                "max_level": 5
+              }
+            },
+            "base_time_seconds": 0.25
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 4",
+        "components": {
+          "sc:mining": {
+            "formula_version": 1,
+            "default": {
+              "can_mine": true,
+              "harvest": true,
+              "speed_multiplier": 1.0
+            },
+            "enchantments": {
+              "minecraft:efficiency": {
+                "max_level": 5
+              }
+            },
+            "base_time_seconds": 0.25
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 5",
+        "components": {
+          "sc:mining": {
+            "formula_version": 1,
+            "default": {
+              "can_mine": true,
+              "harvest": true,
+              "speed_multiplier": 1.0
+            },
+            "enchantments": {
+              "minecraft:efficiency": {
+                "max_level": 5
+              }
+            },
+            "base_time_seconds": 0.25
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 6",
+        "components": {
+          "sc:mining": {
+            "formula_version": 1,
+            "default": {
+              "can_mine": true,
+              "harvest": true,
+              "speed_multiplier": 1.0
+            },
+            "enchantments": {
+              "minecraft:efficiency": {
+                "max_level": 5
+              }
+            },
+            "base_time_seconds": 0.25
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 7",
+        "components": {
+          "sc:mining": {
+            "formula_version": 1,
+            "default": {
+              "can_mine": true,
+              "harvest": true,
+              "speed_multiplier": 1.0
+            },
+            "enchantments": {
+              "minecraft:efficiency": {
+                "max_level": 5
+              }
+            },
+            "base_time_seconds": 0.25
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 0",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/sweet_berry_bush_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 1",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/sweet_berry_bush_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:sweet_berry_bush','growth') == 2",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/sweet_berry_bush_2.json"
+          }
+        }
+      }
+    ],
+    "sc:protocol_runtime_ids": [
+      12602,
+      12603,
+      12604,
+      12605,
+      12606,
+      12607,
+      12608,
+      12609
+    ]
+  }
+}

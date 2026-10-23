@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:snowball",
+          "count": 1,
+          "requires": {
+            "items": [
+              "minecraft:wooden_shovel",
+              "minecraft:golden_shovel",
+              "minecraft:stone_shovel",
+              "minecraft:copper_shovel",
+              "minecraft:iron_shovel",
+              "minecraft:diamond_shovel",
+              "minecraft:netherite_shovel"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

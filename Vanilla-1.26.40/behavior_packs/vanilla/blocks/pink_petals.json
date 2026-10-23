@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:pink_petals",
+      "default_states": {
+        "growth": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/pink_petals.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      7830,
+      7854,
+      7846,
+      7838,
+      7831,
+      7855,
+      7847,
+      7839,
+      7832,
+      7856,
+      7848,
+      7840,
+      7833,
+      7857,
+      7849,
+      7841,
+      7834,
+      7858,
+      7850,
+      7842,
+      7835,
+      7859,
+      7851,
+      7843,
+      7836,
+      7860,
+      7852,
+      7844,
+      7837,
+      7861,
+      7853,
+      7845
+    ]
+  }
+}

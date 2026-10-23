@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:vault",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "ominous": [
+          false,
+          true
+        ],
+        "vault_state": [
+          "inactive",
+          "active",
+          "ejecting",
+          "unlocking"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 50.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 50.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/vault.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      12973,
+      12977,
+      12985,
+      12981,
+      12989,
+      12993,
+      13001,
+      12997,
+      12976,
+      12980,
+      12988,
+      12984,
+      12992,
+      12996,
+      13004,
+      13000,
+      12975,
+      12979,
+      12987,
+      12983,
+      12991,
+      12995,
+      13003,
+      12999,
+      12974,
+      12978,
+      12986,
+      12982,
+      12990,
+      12994,
+      13002,
+      12998
+    ]
+  }
+}

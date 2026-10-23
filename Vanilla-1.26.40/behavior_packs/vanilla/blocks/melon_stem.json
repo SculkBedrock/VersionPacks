@@ -1,0 +1,470 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:melon_stem",
+      "default_states": {
+        "facing_direction": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "growth": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/melon_stem.json"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 0",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 1",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 2",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 3",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 4",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 5",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 6",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','growth') == 7",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 0 && q.block_property('minecraft:melon_stem','growth') == 1",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 1 && q.block_property('minecraft:melon_stem','growth') == 1",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 2 && q.block_property('minecraft:melon_stem','growth') == 1",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 3 && q.block_property('minecraft:melon_stem','growth') == 1",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 4 && q.block_property('minecraft:melon_stem','growth') == 1",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 5 && q.block_property('minecraft:melon_stem','growth') == 1",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 0 && q.block_property('minecraft:melon_stem','growth') == 2",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 1 && q.block_property('minecraft:melon_stem','growth') == 2",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 2 && q.block_property('minecraft:melon_stem','growth') == 2",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 3 && q.block_property('minecraft:melon_stem','growth') == 2",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 4 && q.block_property('minecraft:melon_stem','growth') == 2",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 5 && q.block_property('minecraft:melon_stem','growth') == 2",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 0 && q.block_property('minecraft:melon_stem','growth') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 1 && q.block_property('minecraft:melon_stem','growth') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 2 && q.block_property('minecraft:melon_stem','growth') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 3 && q.block_property('minecraft:melon_stem','growth') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 4 && q.block_property('minecraft:melon_stem','growth') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 5 && q.block_property('minecraft:melon_stem','growth') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 0 && q.block_property('minecraft:melon_stem','growth') == 4",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 1 && q.block_property('minecraft:melon_stem','growth') == 4",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 2 && q.block_property('minecraft:melon_stem','growth') == 4",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 3 && q.block_property('minecraft:melon_stem','growth') == 4",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 4 && q.block_property('minecraft:melon_stem','growth') == 4",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 5 && q.block_property('minecraft:melon_stem','growth') == 4",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_4.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 0 && q.block_property('minecraft:melon_stem','growth') == 5",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_5.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 1 && q.block_property('minecraft:melon_stem','growth') == 5",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_5.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 2 && q.block_property('minecraft:melon_stem','growth') == 5",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_5.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 3 && q.block_property('minecraft:melon_stem','growth') == 5",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_5.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 4 && q.block_property('minecraft:melon_stem','growth') == 5",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_5.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 5 && q.block_property('minecraft:melon_stem','growth') == 5",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_5.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 0 && q.block_property('minecraft:melon_stem','growth') == 6",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_6.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 1 && q.block_property('minecraft:melon_stem','growth') == 6",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_6.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 2 && q.block_property('minecraft:melon_stem','growth') == 6",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_6.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 3 && q.block_property('minecraft:melon_stem','growth') == 6",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_6.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 4 && q.block_property('minecraft:melon_stem','growth') == 6",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_6.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 5 && q.block_property('minecraft:melon_stem','growth') == 6",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_6.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 0 && q.block_property('minecraft:melon_stem','growth') == 7",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_7.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 1 && q.block_property('minecraft:melon_stem','growth') == 7",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_7.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 2 && q.block_property('minecraft:melon_stem','growth') == 7",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_7.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 3 && q.block_property('minecraft:melon_stem','growth') == 7",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_7.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 4 && q.block_property('minecraft:melon_stem','growth') == 7",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_7.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:melon_stem','facing_direction') == 5 && q.block_property('minecraft:melon_stem','growth') == 7",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/melon_stem_7.json"
+          }
+        }
+      }
+    ],
+    "sc:protocol_runtime_ids": [
+      8862,
+      8863,
+      8864,
+      8865,
+      8866,
+      8867,
+      8868,
+      8869,
+      8870,
+      8871,
+      8872,
+      8873,
+      8874,
+      8875,
+      8876,
+      8877,
+      8878,
+      8879,
+      8880,
+      8881,
+      8882,
+      8883,
+      8884,
+      8885,
+      8886,
+      8887,
+      8888,
+      8889,
+      8890,
+      8891,
+      8892,
+      8893,
+      8894,
+      8895,
+      8896,
+      8897,
+      8898,
+      8899,
+      8900,
+      8901,
+      8902,
+      8903,
+      8904,
+      8905,
+      8906,
+      8907,
+      8908,
+      8909
+    ]
+  }
+}

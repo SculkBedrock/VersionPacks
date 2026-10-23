@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:bedrock",
+      "default_states": {
+        "infiniburn_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "sc:unbreakable": {}
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      14348,
+      14349
+    ]
+  }
+}

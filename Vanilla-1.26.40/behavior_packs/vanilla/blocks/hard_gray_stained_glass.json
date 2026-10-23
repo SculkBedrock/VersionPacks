@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:hard_gray_stained_glass",
+      "default_states": {}
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.3
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.3,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      1556
+    ]
+  }
+}

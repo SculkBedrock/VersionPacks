@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lapis_lazuli",
+          "count": [
+            {
+              "value": 4,
+              "chance": 0.2
+            },
+            {
+              "value": 5,
+              "chance": 0.2
+            },
+            {
+              "value": 6,
+              "chance": 0.2
+            },
+            {
+              "value": 7,
+              "chance": 0.2
+            },
+            {
+              "value": 8,
+              "chance": 0.2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

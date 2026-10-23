@@ -1,0 +1,15 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:chorus_fruit",
+          "chance": 0.5,
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

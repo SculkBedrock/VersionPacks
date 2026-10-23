@@ -1,0 +1,80 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:poplar_shelf",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "powered_bit": [
+          false,
+          true
+        ],
+        "powered_shelf_type": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 2.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 2.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      9826,
+      9830,
+      9834,
+      9838,
+      9842,
+      9846,
+      9850,
+      9854,
+      9829,
+      9833,
+      9837,
+      9841,
+      9845,
+      9849,
+      9853,
+      9857,
+      9828,
+      9832,
+      9836,
+      9840,
+      9844,
+      9848,
+      9852,
+      9856,
+      9827,
+      9831,
+      9835,
+      9839,
+      9843,
+      9847,
+      9851,
+      9855
+    ]
+  }
+}

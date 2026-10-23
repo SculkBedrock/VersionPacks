@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:short_dry_grass",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:twisting_vines",
+          "chance": 0.3333333333333333,
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:deprecated_anvil",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ]
+      }
+    },
+    "components": {},
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      9635,
+      9638,
+      9637,
+      9636
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:kelp",
+      "default_states": {
+        "kelp_age": [
+          0,
+          1,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          2,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/kelp.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      9749,
+      9750,
+      9759,
+      9760,
+      9761,
+      9762,
+      9763,
+      9764,
+      9765,
+      9766,
+      9767,
+      9768,
+      9751,
+      9769,
+      9770,
+      9771,
+      9772,
+      9773,
+      9774,
+      9752,
+      9753,
+      9754,
+      9755,
+      9756,
+      9757,
+      9758
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:waxed_weathered_copper_bulb",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

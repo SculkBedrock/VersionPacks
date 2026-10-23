@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:wildflowers",
+      "default_states": {
+        "growth": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/wildflowers.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      15755,
+      15779,
+      15771,
+      15763,
+      15756,
+      15780,
+      15772,
+      15764,
+      15757,
+      15781,
+      15773,
+      15765,
+      15758,
+      15782,
+      15774,
+      15766,
+      15759,
+      15783,
+      15775,
+      15767,
+      15760,
+      15784,
+      15776,
+      15768,
+      15761,
+      15785,
+      15777,
+      15769,
+      15762,
+      15786,
+      15778,
+      15770
+    ]
+  }
+}

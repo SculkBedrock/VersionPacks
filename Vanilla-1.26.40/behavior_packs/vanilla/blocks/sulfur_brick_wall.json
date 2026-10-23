@@ -1,0 +1,279 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:sulfur_brick_wall",
+      "default_states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 1.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 1.5,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/sulfur_brick_wall.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      13894,
+      13895,
+      13948,
+      13949,
+      14002,
+      14003,
+      13912,
+      13913,
+      13966,
+      13967,
+      14020,
+      14021,
+      13930,
+      13931,
+      13984,
+      13985,
+      14038,
+      14039,
+      13896,
+      13897,
+      13950,
+      13951,
+      14004,
+      14005,
+      13914,
+      13915,
+      13968,
+      13969,
+      14022,
+      14023,
+      13932,
+      13933,
+      13986,
+      13987,
+      14040,
+      14041,
+      13898,
+      13899,
+      13952,
+      13953,
+      14006,
+      14007,
+      13916,
+      13917,
+      13970,
+      13971,
+      14024,
+      14025,
+      13934,
+      13935,
+      13988,
+      13989,
+      14042,
+      14043,
+      13900,
+      13901,
+      13954,
+      13955,
+      14008,
+      14009,
+      13918,
+      13919,
+      13972,
+      13973,
+      14026,
+      14027,
+      13936,
+      13937,
+      13990,
+      13991,
+      14044,
+      14045,
+      13902,
+      13903,
+      13956,
+      13957,
+      14010,
+      14011,
+      13920,
+      13921,
+      13974,
+      13975,
+      14028,
+      14029,
+      13938,
+      13939,
+      13992,
+      13993,
+      14046,
+      14047,
+      13904,
+      13905,
+      13958,
+      13959,
+      14012,
+      14013,
+      13922,
+      13923,
+      13976,
+      13977,
+      14030,
+      14031,
+      13940,
+      13941,
+      13994,
+      13995,
+      14048,
+      14049,
+      13906,
+      13907,
+      13960,
+      13961,
+      14014,
+      14015,
+      13924,
+      13925,
+      13978,
+      13979,
+      14032,
+      14033,
+      13942,
+      13943,
+      13996,
+      13997,
+      14050,
+      14051,
+      13908,
+      13909,
+      13962,
+      13963,
+      14016,
+      14017,
+      13926,
+      13927,
+      13980,
+      13981,
+      14034,
+      14035,
+      13944,
+      13945,
+      13998,
+      13999,
+      14052,
+      14053,
+      13910,
+      13911,
+      13964,
+      13965,
+      14018,
+      14019,
+      13928,
+      13929,
+      13982,
+      13983,
+      14036,
+      14037,
+      13946,
+      13947,
+      14000,
+      14001,
+      14054,
+      14055
+    ]
+  }
+}

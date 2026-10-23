@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:dead_brain_coral_fan",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

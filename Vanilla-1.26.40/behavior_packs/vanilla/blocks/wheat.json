@@ -1,0 +1,94 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:wheat",
+      "default_states": {
+        "growth": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/wheat.json"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:wheat','growth') == 7",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:wheat','growth') == 0",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:wheat','growth') == 1",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:wheat','growth') == 2",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:wheat','growth') == 3",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:wheat','growth') == 4",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:wheat','growth') == 5",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:wheat','growth') == 6",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:wheat','growth') == 7",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/wheat_1.json"
+          }
+        }
+      }
+    ],
+    "sc:protocol_runtime_ids": [
+      15192,
+      15193,
+      15194,
+      15195,
+      15196,
+      15197,
+      15198,
+      15199
+    ]
+  }
+}

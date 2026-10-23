@@ -1,0 +1,279 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:blackstone_wall",
+      "default_states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 1.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 1.5,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/blackstone_wall.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      6575,
+      6576,
+      6629,
+      6630,
+      6683,
+      6684,
+      6593,
+      6594,
+      6647,
+      6648,
+      6701,
+      6702,
+      6611,
+      6612,
+      6665,
+      6666,
+      6719,
+      6720,
+      6577,
+      6578,
+      6631,
+      6632,
+      6685,
+      6686,
+      6595,
+      6596,
+      6649,
+      6650,
+      6703,
+      6704,
+      6613,
+      6614,
+      6667,
+      6668,
+      6721,
+      6722,
+      6579,
+      6580,
+      6633,
+      6634,
+      6687,
+      6688,
+      6597,
+      6598,
+      6651,
+      6652,
+      6705,
+      6706,
+      6615,
+      6616,
+      6669,
+      6670,
+      6723,
+      6724,
+      6581,
+      6582,
+      6635,
+      6636,
+      6689,
+      6690,
+      6599,
+      6600,
+      6653,
+      6654,
+      6707,
+      6708,
+      6617,
+      6618,
+      6671,
+      6672,
+      6725,
+      6726,
+      6583,
+      6584,
+      6637,
+      6638,
+      6691,
+      6692,
+      6601,
+      6602,
+      6655,
+      6656,
+      6709,
+      6710,
+      6619,
+      6620,
+      6673,
+      6674,
+      6727,
+      6728,
+      6585,
+      6586,
+      6639,
+      6640,
+      6693,
+      6694,
+      6603,
+      6604,
+      6657,
+      6658,
+      6711,
+      6712,
+      6621,
+      6622,
+      6675,
+      6676,
+      6729,
+      6730,
+      6587,
+      6588,
+      6641,
+      6642,
+      6695,
+      6696,
+      6605,
+      6606,
+      6659,
+      6660,
+      6713,
+      6714,
+      6623,
+      6624,
+      6677,
+      6678,
+      6731,
+      6732,
+      6589,
+      6590,
+      6643,
+      6644,
+      6697,
+      6698,
+      6607,
+      6608,
+      6661,
+      6662,
+      6715,
+      6716,
+      6625,
+      6626,
+      6679,
+      6680,
+      6733,
+      6734,
+      6591,
+      6592,
+      6645,
+      6646,
+      6699,
+      6700,
+      6609,
+      6610,
+      6663,
+      6664,
+      6717,
+      6718,
+      6627,
+      6628,
+      6681,
+      6682,
+      6735,
+      6736
+    ]
+  }
+}

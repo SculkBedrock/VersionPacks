@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin_seeds",
+          "chance": 0.784,
+          "count": [
+            {
+              "value": 1,
+              "chance": 0.5510204081632653
+            },
+            {
+              "value": 2,
+              "chance": 0.36734693877551017
+            },
+            {
+              "value": 3,
+              "chance": 0.08163265306122455
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

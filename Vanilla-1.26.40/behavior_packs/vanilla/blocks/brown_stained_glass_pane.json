@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:brown_stained_glass_pane",
+      "default_states": {}
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.3
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.3,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/brown_stained_glass_pane.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      1560
+    ]
+  }
+}

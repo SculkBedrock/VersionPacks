@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:nether_wart",
+      "default_states": {
+        "age": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/nether_wart.json"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:nether_wart','age') == 3",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:nether_wart','age') == 0",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:nether_wart','age') == 1",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:nether_wart','age') == 2",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:nether_wart','age') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/nether_wart_1.json"
+          }
+        }
+      }
+    ],
+    "sc:protocol_runtime_ids": [
+      15936,
+      15937,
+      15938,
+      15939
+    ]
+  }
+}

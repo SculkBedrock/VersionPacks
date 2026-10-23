@@ -1,0 +1,279 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:polished_blackstone_wall",
+      "default_states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 1.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 1.5,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/polished_blackstone_wall.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      13699,
+      13700,
+      13753,
+      13754,
+      13807,
+      13808,
+      13717,
+      13718,
+      13771,
+      13772,
+      13825,
+      13826,
+      13735,
+      13736,
+      13789,
+      13790,
+      13843,
+      13844,
+      13701,
+      13702,
+      13755,
+      13756,
+      13809,
+      13810,
+      13719,
+      13720,
+      13773,
+      13774,
+      13827,
+      13828,
+      13737,
+      13738,
+      13791,
+      13792,
+      13845,
+      13846,
+      13703,
+      13704,
+      13757,
+      13758,
+      13811,
+      13812,
+      13721,
+      13722,
+      13775,
+      13776,
+      13829,
+      13830,
+      13739,
+      13740,
+      13793,
+      13794,
+      13847,
+      13848,
+      13705,
+      13706,
+      13759,
+      13760,
+      13813,
+      13814,
+      13723,
+      13724,
+      13777,
+      13778,
+      13831,
+      13832,
+      13741,
+      13742,
+      13795,
+      13796,
+      13849,
+      13850,
+      13707,
+      13708,
+      13761,
+      13762,
+      13815,
+      13816,
+      13725,
+      13726,
+      13779,
+      13780,
+      13833,
+      13834,
+      13743,
+      13744,
+      13797,
+      13798,
+      13851,
+      13852,
+      13709,
+      13710,
+      13763,
+      13764,
+      13817,
+      13818,
+      13727,
+      13728,
+      13781,
+      13782,
+      13835,
+      13836,
+      13745,
+      13746,
+      13799,
+      13800,
+      13853,
+      13854,
+      13711,
+      13712,
+      13765,
+      13766,
+      13819,
+      13820,
+      13729,
+      13730,
+      13783,
+      13784,
+      13837,
+      13838,
+      13747,
+      13748,
+      13801,
+      13802,
+      13855,
+      13856,
+      13713,
+      13714,
+      13767,
+      13768,
+      13821,
+      13822,
+      13731,
+      13732,
+      13785,
+      13786,
+      13839,
+      13840,
+      13749,
+      13750,
+      13803,
+      13804,
+      13857,
+      13858,
+      13715,
+      13716,
+      13769,
+      13770,
+      13823,
+      13824,
+      13733,
+      13734,
+      13787,
+      13788,
+      13841,
+      13842,
+      13751,
+      13752,
+      13805,
+      13806,
+      13859,
+      13860
+    ]
+  }
+}

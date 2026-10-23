@@ -1,0 +1,163 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:crafter",
+      "default_states": {
+        "crafting": [
+          false,
+          true
+        ],
+        "orientation": [
+          "down_east",
+          "down_north",
+          "down_south",
+          "down_west",
+          "east_up",
+          "north_up",
+          "south_up",
+          "up_east",
+          "up_north",
+          "up_south",
+          "up_west",
+          "west_up"
+        ],
+        "triggered_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 10.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 10.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/crafter.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      16201,
+      16213,
+      16202,
+      16214,
+      16203,
+      16215,
+      16204,
+      16216,
+      16210,
+      16222,
+      16211,
+      16223,
+      16212,
+      16224,
+      16205,
+      16217,
+      16206,
+      16218,
+      16207,
+      16219,
+      16208,
+      16220,
+      16209,
+      16221,
+      16225,
+      16237,
+      16226,
+      16238,
+      16227,
+      16239,
+      16228,
+      16240,
+      16234,
+      16246,
+      16235,
+      16247,
+      16236,
+      16248,
+      16229,
+      16241,
+      16230,
+      16242,
+      16231,
+      16243,
+      16232,
+      16244,
+      16233,
+      16245
+    ]
+  }
+}

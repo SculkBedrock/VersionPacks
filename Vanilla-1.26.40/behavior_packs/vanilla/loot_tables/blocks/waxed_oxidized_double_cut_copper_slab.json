@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:waxed_oxidized_cut_copper_slab",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

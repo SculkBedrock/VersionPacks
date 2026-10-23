@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:mangrove_door",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

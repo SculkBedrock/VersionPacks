@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:torch",
+      "default_states": {
+        "torch_facing_direction": [
+          "unknown",
+          "east",
+          "north",
+          "south",
+          "top",
+          "west"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/torch.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      3199,
+      3201,
+      3202,
+      3203,
+      3204,
+      3200
+    ]
+  }
+}

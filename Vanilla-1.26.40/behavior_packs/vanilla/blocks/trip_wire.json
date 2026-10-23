@@ -1,0 +1,64 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:trip_wire",
+      "default_states": {
+        "attached_bit": [
+          false,
+          true
+        ],
+        "disarmed_bit": [
+          false,
+          true
+        ],
+        "powered_bit": [
+          false,
+          true
+        ],
+        "suspended_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      15576,
+      15578,
+      15577,
+      15579,
+      15584,
+      15586,
+      15585,
+      15587,
+      15580,
+      15582,
+      15581,
+      15583,
+      15588,
+      15590,
+      15589,
+      15591
+    ]
+  }
+}

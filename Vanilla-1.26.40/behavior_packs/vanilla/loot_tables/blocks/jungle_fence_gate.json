@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:jungle_fence_gate",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

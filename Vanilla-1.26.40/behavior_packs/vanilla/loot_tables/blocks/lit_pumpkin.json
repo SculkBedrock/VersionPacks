@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lit_pumpkin",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

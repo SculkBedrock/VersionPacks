@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:pink_stained_glass_pane",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

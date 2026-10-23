@@ -1,0 +1,65 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:powered_comparator",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "output_lit_bit": [
+          false,
+          true
+        ],
+        "output_subtract_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/unpowered_comparator.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      2001,
+      2005,
+      2009,
+      2013,
+      2004,
+      2008,
+      2012,
+      2016,
+      2003,
+      2007,
+      2011,
+      2015,
+      2002,
+      2006,
+      2010,
+      2014
+    ]
+  }
+}

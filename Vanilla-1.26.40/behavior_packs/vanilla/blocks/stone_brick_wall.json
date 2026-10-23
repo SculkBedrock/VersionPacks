@@ -1,0 +1,279 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:stone_brick_wall",
+      "default_states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 1.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 1.5,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/stone_brick_wall.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      10310,
+      10311,
+      10364,
+      10365,
+      10418,
+      10419,
+      10328,
+      10329,
+      10382,
+      10383,
+      10436,
+      10437,
+      10346,
+      10347,
+      10400,
+      10401,
+      10454,
+      10455,
+      10312,
+      10313,
+      10366,
+      10367,
+      10420,
+      10421,
+      10330,
+      10331,
+      10384,
+      10385,
+      10438,
+      10439,
+      10348,
+      10349,
+      10402,
+      10403,
+      10456,
+      10457,
+      10314,
+      10315,
+      10368,
+      10369,
+      10422,
+      10423,
+      10332,
+      10333,
+      10386,
+      10387,
+      10440,
+      10441,
+      10350,
+      10351,
+      10404,
+      10405,
+      10458,
+      10459,
+      10316,
+      10317,
+      10370,
+      10371,
+      10424,
+      10425,
+      10334,
+      10335,
+      10388,
+      10389,
+      10442,
+      10443,
+      10352,
+      10353,
+      10406,
+      10407,
+      10460,
+      10461,
+      10318,
+      10319,
+      10372,
+      10373,
+      10426,
+      10427,
+      10336,
+      10337,
+      10390,
+      10391,
+      10444,
+      10445,
+      10354,
+      10355,
+      10408,
+      10409,
+      10462,
+      10463,
+      10320,
+      10321,
+      10374,
+      10375,
+      10428,
+      10429,
+      10338,
+      10339,
+      10392,
+      10393,
+      10446,
+      10447,
+      10356,
+      10357,
+      10410,
+      10411,
+      10464,
+      10465,
+      10322,
+      10323,
+      10376,
+      10377,
+      10430,
+      10431,
+      10340,
+      10341,
+      10394,
+      10395,
+      10448,
+      10449,
+      10358,
+      10359,
+      10412,
+      10413,
+      10466,
+      10467,
+      10324,
+      10325,
+      10378,
+      10379,
+      10432,
+      10433,
+      10342,
+      10343,
+      10396,
+      10397,
+      10450,
+      10451,
+      10360,
+      10361,
+      10414,
+      10415,
+      10468,
+      10469,
+      10326,
+      10327,
+      10380,
+      10381,
+      10434,
+      10435,
+      10344,
+      10345,
+      10398,
+      10399,
+      10452,
+      10453,
+      10362,
+      10363,
+      10416,
+      10417,
+      10470,
+      10471
+    ]
+  }
+}

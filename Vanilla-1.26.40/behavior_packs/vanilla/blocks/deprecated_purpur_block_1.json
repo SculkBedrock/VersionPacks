@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:deprecated_purpur_block_1",
+      "default_states": {
+        "pillar_axis": [
+          "y",
+          "x",
+          "z"
+        ]
+      }
+    },
+    "components": {},
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      14515,
+      14516,
+      14517
+    ]
+  }
+}

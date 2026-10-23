@@ -1,0 +1,15 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:red_mushroom",
+          "chance": 0.05263157894736842,
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

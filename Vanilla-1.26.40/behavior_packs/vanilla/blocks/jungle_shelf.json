@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:jungle_shelf",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "powered_bit": [
+          false,
+          true
+        ],
+        "powered_shelf_type": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 2.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 2.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/jungle_shelf.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      6475,
+      6479,
+      6483,
+      6487,
+      6491,
+      6495,
+      6499,
+      6503,
+      6478,
+      6482,
+      6486,
+      6490,
+      6494,
+      6498,
+      6502,
+      6506,
+      6477,
+      6481,
+      6485,
+      6489,
+      6493,
+      6497,
+      6501,
+      6505,
+      6476,
+      6480,
+      6484,
+      6488,
+      6492,
+      6496,
+      6500,
+      6504
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:lit_smoker",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 3.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 3.5,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "sc:furnace": {
+        "kind": "smoker",
+        "cook_ticks": 100,
+        "fuel": true,
+        "lit": true,
+        "lit_variant": "minecraft:smoker",
+        "container_type": 28,
+        "slots": [
+          {
+            "role": "input",
+            "container": 46
+          },
+          {
+            "role": "fuel",
+            "container": 24
+          },
+          {
+            "role": "result",
+            "container": 26
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/smoker.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      15877,
+      15880,
+      15879,
+      15878
+    ]
+  }
+}

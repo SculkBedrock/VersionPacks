@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:bamboo_shelf",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "powered_bit": [
+          false,
+          true
+        ],
+        "powered_shelf_type": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 2.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 2.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/bamboo_shelf.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      6943,
+      6947,
+      6951,
+      6955,
+      6959,
+      6963,
+      6967,
+      6971,
+      6946,
+      6950,
+      6954,
+      6958,
+      6962,
+      6966,
+      6970,
+      6974,
+      6945,
+      6949,
+      6953,
+      6957,
+      6961,
+      6965,
+      6969,
+      6973,
+      6944,
+      6948,
+      6952,
+      6956,
+      6960,
+      6964,
+      6968,
+      6972
+    ]
+  }
+}

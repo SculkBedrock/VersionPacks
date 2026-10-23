@@ -1,0 +1,279 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:cobblestone_wall",
+      "default_states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 2.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 2.0,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/cobblestone_wall.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      4420,
+      4421,
+      4474,
+      4475,
+      4528,
+      4529,
+      4438,
+      4439,
+      4492,
+      4493,
+      4546,
+      4547,
+      4456,
+      4457,
+      4510,
+      4511,
+      4564,
+      4565,
+      4422,
+      4423,
+      4476,
+      4477,
+      4530,
+      4531,
+      4440,
+      4441,
+      4494,
+      4495,
+      4548,
+      4549,
+      4458,
+      4459,
+      4512,
+      4513,
+      4566,
+      4567,
+      4424,
+      4425,
+      4478,
+      4479,
+      4532,
+      4533,
+      4442,
+      4443,
+      4496,
+      4497,
+      4550,
+      4551,
+      4460,
+      4461,
+      4514,
+      4515,
+      4568,
+      4569,
+      4426,
+      4427,
+      4480,
+      4481,
+      4534,
+      4535,
+      4444,
+      4445,
+      4498,
+      4499,
+      4552,
+      4553,
+      4462,
+      4463,
+      4516,
+      4517,
+      4570,
+      4571,
+      4428,
+      4429,
+      4482,
+      4483,
+      4536,
+      4537,
+      4446,
+      4447,
+      4500,
+      4501,
+      4554,
+      4555,
+      4464,
+      4465,
+      4518,
+      4519,
+      4572,
+      4573,
+      4430,
+      4431,
+      4484,
+      4485,
+      4538,
+      4539,
+      4448,
+      4449,
+      4502,
+      4503,
+      4556,
+      4557,
+      4466,
+      4467,
+      4520,
+      4521,
+      4574,
+      4575,
+      4432,
+      4433,
+      4486,
+      4487,
+      4540,
+      4541,
+      4450,
+      4451,
+      4504,
+      4505,
+      4558,
+      4559,
+      4468,
+      4469,
+      4522,
+      4523,
+      4576,
+      4577,
+      4434,
+      4435,
+      4488,
+      4489,
+      4542,
+      4543,
+      4452,
+      4453,
+      4506,
+      4507,
+      4560,
+      4561,
+      4470,
+      4471,
+      4524,
+      4525,
+      4578,
+      4579,
+      4436,
+      4437,
+      4490,
+      4491,
+      4544,
+      4545,
+      4454,
+      4455,
+      4508,
+      4509,
+      4562,
+      4563,
+      4472,
+      4473,
+      4526,
+      4527,
+      4580,
+      4581
+    ]
+  }
+}

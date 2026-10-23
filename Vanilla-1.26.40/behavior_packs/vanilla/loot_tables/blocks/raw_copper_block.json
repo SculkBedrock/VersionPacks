@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:raw_copper_block",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

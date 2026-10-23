@@ -1,0 +1,143 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:wooden_door",
+      "default_states": {
+        "door_hinge_bit": [
+          false,
+          true
+        ],
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "open_bit": [
+          false,
+          true
+        ],
+        "upper_block_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 3.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 3.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_axe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/wooden_door.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      5922,
+      5930,
+      5926,
+      5934,
+      5925,
+      5933,
+      5929,
+      5937,
+      5924,
+      5932,
+      5928,
+      5936,
+      5923,
+      5931,
+      5927,
+      5935,
+      5938,
+      5946,
+      5942,
+      5950,
+      5941,
+      5949,
+      5945,
+      5953,
+      5940,
+      5948,
+      5944,
+      5952,
+      5939,
+      5947,
+      5943,
+      5951
+    ]
+  }
+}

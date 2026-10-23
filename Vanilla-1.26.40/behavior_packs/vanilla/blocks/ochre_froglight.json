@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:ochre_froglight",
+      "default_states": {
+        "pillar_axis": [
+          "y",
+          "x",
+          "z"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 10.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 10.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/ochre_froglight.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      4981,
+      4982,
+      4983
+    ]
+  }
+}

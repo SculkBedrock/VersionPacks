@@ -1,0 +1,236 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:snow_layer",
+      "default_states": {
+        "covered_bit": [
+          false,
+          true
+        ],
+        "height": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.2
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.2,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_shovel"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/snow_layer.json"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 0",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 1",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 2",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 3",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 4",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 5",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 6",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','height') == 7",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == false && q.block_property('minecraft:snow_layer','height') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == false && q.block_property('minecraft:snow_layer','height') == 4",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == true && q.block_property('minecraft:snow_layer','height') == 3",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == true && q.block_property('minecraft:snow_layer','height') == 4",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == false && q.block_property('minecraft:snow_layer','height') == 5",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == false && q.block_property('minecraft:snow_layer','height') == 6",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == true && q.block_property('minecraft:snow_layer','height') == 5",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == true && q.block_property('minecraft:snow_layer','height') == 6",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == false && q.block_property('minecraft:snow_layer','height') == 7",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:snow_layer','covered_bit') == true && q.block_property('minecraft:snow_layer','height') == 7",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/snow_layer_3.json"
+          }
+        }
+      }
+    ],
+    "sc:protocol_runtime_ids": [
+      1032,
+      1033,
+      1034,
+      1035,
+      1036,
+      1037,
+      1038,
+      1039,
+      1040,
+      1041,
+      1042,
+      1043,
+      1044,
+      1045,
+      1046,
+      1047
+    ]
+  }
+}

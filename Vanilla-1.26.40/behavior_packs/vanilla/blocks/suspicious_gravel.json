@@ -1,0 +1,53 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:suspicious_gravel",
+      "default_states": {
+        "brushed_progress": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hanging": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.25
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.25,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/suspicious_gravel.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      8378,
+      8379,
+      8380,
+      8381,
+      8382,
+      8383,
+      8384,
+      8385
+    ]
+  }
+}

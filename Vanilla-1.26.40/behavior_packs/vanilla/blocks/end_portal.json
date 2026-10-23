@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:end_portal",
+      "default_states": {}
+    },
+    "components": {
+      "sc:unbreakable": {}
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      15720
+    ]
+  }
+}

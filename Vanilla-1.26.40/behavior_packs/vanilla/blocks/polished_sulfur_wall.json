@@ -1,0 +1,279 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:polished_sulfur_wall",
+      "default_states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 1.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 1.5,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/polished_sulfur_wall.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      17230,
+      17231,
+      17284,
+      17285,
+      17338,
+      17339,
+      17248,
+      17249,
+      17302,
+      17303,
+      17356,
+      17357,
+      17266,
+      17267,
+      17320,
+      17321,
+      17374,
+      17375,
+      17232,
+      17233,
+      17286,
+      17287,
+      17340,
+      17341,
+      17250,
+      17251,
+      17304,
+      17305,
+      17358,
+      17359,
+      17268,
+      17269,
+      17322,
+      17323,
+      17376,
+      17377,
+      17234,
+      17235,
+      17288,
+      17289,
+      17342,
+      17343,
+      17252,
+      17253,
+      17306,
+      17307,
+      17360,
+      17361,
+      17270,
+      17271,
+      17324,
+      17325,
+      17378,
+      17379,
+      17236,
+      17237,
+      17290,
+      17291,
+      17344,
+      17345,
+      17254,
+      17255,
+      17308,
+      17309,
+      17362,
+      17363,
+      17272,
+      17273,
+      17326,
+      17327,
+      17380,
+      17381,
+      17238,
+      17239,
+      17292,
+      17293,
+      17346,
+      17347,
+      17256,
+      17257,
+      17310,
+      17311,
+      17364,
+      17365,
+      17274,
+      17275,
+      17328,
+      17329,
+      17382,
+      17383,
+      17240,
+      17241,
+      17294,
+      17295,
+      17348,
+      17349,
+      17258,
+      17259,
+      17312,
+      17313,
+      17366,
+      17367,
+      17276,
+      17277,
+      17330,
+      17331,
+      17384,
+      17385,
+      17242,
+      17243,
+      17296,
+      17297,
+      17350,
+      17351,
+      17260,
+      17261,
+      17314,
+      17315,
+      17368,
+      17369,
+      17278,
+      17279,
+      17332,
+      17333,
+      17386,
+      17387,
+      17244,
+      17245,
+      17298,
+      17299,
+      17352,
+      17353,
+      17262,
+      17263,
+      17316,
+      17317,
+      17370,
+      17371,
+      17280,
+      17281,
+      17334,
+      17335,
+      17388,
+      17389,
+      17246,
+      17247,
+      17300,
+      17301,
+      17354,
+      17355,
+      17264,
+      17265,
+      17318,
+      17319,
+      17372,
+      17373,
+      17282,
+      17283,
+      17336,
+      17337,
+      17390,
+      17391
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:creaking_heart",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

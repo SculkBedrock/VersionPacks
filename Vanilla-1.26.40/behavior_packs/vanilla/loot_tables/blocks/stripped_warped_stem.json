@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stripped_warped_stem",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

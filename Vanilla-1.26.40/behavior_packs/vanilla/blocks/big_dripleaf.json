@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:big_dripleaf",
+      "default_states": {
+        "big_dripleaf_head": [
+          false,
+          true
+        ],
+        "big_dripleaf_tilt": [
+          "full_tilt",
+          "none",
+          "partial_tilt",
+          "unstable"
+        ],
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/big_dripleaf.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      12185,
+      12209,
+      12201,
+      12193,
+      12182,
+      12206,
+      12198,
+      12190,
+      12184,
+      12208,
+      12200,
+      12192,
+      12183,
+      12207,
+      12199,
+      12191,
+      12189,
+      12213,
+      12205,
+      12197,
+      12186,
+      12210,
+      12202,
+      12194,
+      12188,
+      12212,
+      12204,
+      12196,
+      12187,
+      12211,
+      12203,
+      12195
+    ]
+  }
+}

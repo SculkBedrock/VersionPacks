@@ -1,0 +1,118 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:pink_candle",
+      "default_states": {
+        "candles": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "lit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.1
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.1,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/pink_candle.json"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 0",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 1",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 2",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 3",
+        "components": {}
+      },
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 1 && q.block_property('minecraft:pink_candle','lit') == false",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/pink_candle_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 1 && q.block_property('minecraft:pink_candle','lit') == true",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/pink_candle_1.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 2 && q.block_property('minecraft:pink_candle','lit') == false",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/pink_candle_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 2 && q.block_property('minecraft:pink_candle','lit') == true",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/pink_candle_2.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 3 && q.block_property('minecraft:pink_candle','lit') == false",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/pink_candle_3.json"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('minecraft:pink_candle','candles') == 3 && q.block_property('minecraft:pink_candle','lit') == true",
+        "components": {
+          "minecraft:loot": {
+            "table": "loot_tables/blocks/pink_candle_3.json"
+          }
+        }
+      }
+    ],
+    "sc:protocol_runtime_ids": [
+      15297,
+      15301,
+      15298,
+      15302,
+      15299,
+      15303,
+      15300,
+      15304
+    ]
+  }
+}

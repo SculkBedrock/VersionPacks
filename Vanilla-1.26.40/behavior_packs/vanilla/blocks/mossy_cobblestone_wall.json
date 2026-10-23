@@ -1,0 +1,279 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:mossy_cobblestone_wall",
+      "default_states": {
+        "wall_connection_type_east": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_north": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_south": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_connection_type_west": [
+          "none",
+          "short",
+          "tall"
+        ],
+        "wall_post_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 2.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 2.0,
+        "default": {
+          "can_mine": true,
+          "harvest": false,
+          "speed_multiplier": 1.0
+        },
+        "tools": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 2.0
+          },
+          {
+            "items": [
+              "minecraft:golden_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 12.0
+          },
+          {
+            "items": [
+              "minecraft:stone_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 4.0
+          },
+          {
+            "items": [
+              "minecraft:copper_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 1.0
+          },
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 6.0
+          },
+          {
+            "items": [
+              "minecraft:diamond_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 8.0
+          },
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "can_mine": true,
+            "harvest": true,
+            "speed_multiplier": 9.0
+          }
+        ],
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/mossy_cobblestone_wall.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      3840,
+      3841,
+      3894,
+      3895,
+      3948,
+      3949,
+      3858,
+      3859,
+      3912,
+      3913,
+      3966,
+      3967,
+      3876,
+      3877,
+      3930,
+      3931,
+      3984,
+      3985,
+      3842,
+      3843,
+      3896,
+      3897,
+      3950,
+      3951,
+      3860,
+      3861,
+      3914,
+      3915,
+      3968,
+      3969,
+      3878,
+      3879,
+      3932,
+      3933,
+      3986,
+      3987,
+      3844,
+      3845,
+      3898,
+      3899,
+      3952,
+      3953,
+      3862,
+      3863,
+      3916,
+      3917,
+      3970,
+      3971,
+      3880,
+      3881,
+      3934,
+      3935,
+      3988,
+      3989,
+      3846,
+      3847,
+      3900,
+      3901,
+      3954,
+      3955,
+      3864,
+      3865,
+      3918,
+      3919,
+      3972,
+      3973,
+      3882,
+      3883,
+      3936,
+      3937,
+      3990,
+      3991,
+      3848,
+      3849,
+      3902,
+      3903,
+      3956,
+      3957,
+      3866,
+      3867,
+      3920,
+      3921,
+      3974,
+      3975,
+      3884,
+      3885,
+      3938,
+      3939,
+      3992,
+      3993,
+      3850,
+      3851,
+      3904,
+      3905,
+      3958,
+      3959,
+      3868,
+      3869,
+      3922,
+      3923,
+      3976,
+      3977,
+      3886,
+      3887,
+      3940,
+      3941,
+      3994,
+      3995,
+      3852,
+      3853,
+      3906,
+      3907,
+      3960,
+      3961,
+      3870,
+      3871,
+      3924,
+      3925,
+      3978,
+      3979,
+      3888,
+      3889,
+      3942,
+      3943,
+      3996,
+      3997,
+      3854,
+      3855,
+      3908,
+      3909,
+      3962,
+      3963,
+      3872,
+      3873,
+      3926,
+      3927,
+      3980,
+      3981,
+      3890,
+      3891,
+      3944,
+      3945,
+      3998,
+      3999,
+      3856,
+      3857,
+      3910,
+      3911,
+      3964,
+      3965,
+      3874,
+      3875,
+      3928,
+      3929,
+      3982,
+      3983,
+      3892,
+      3893,
+      3946,
+      3947,
+      4000,
+      4001
+    ]
+  }
+}

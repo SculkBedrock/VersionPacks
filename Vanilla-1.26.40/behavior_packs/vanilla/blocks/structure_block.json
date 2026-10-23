@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:structure_block",
+      "default_states": {
+        "structure_block_type": [
+          "data",
+          "corner",
+          "export",
+          "invalid",
+          "load",
+          "save"
+        ]
+      }
+    },
+    "components": {
+      "sc:unbreakable": {}
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      13282,
+      13285,
+      13287,
+      13286,
+      13284,
+      13283
+    ]
+  }
+}

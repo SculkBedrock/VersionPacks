@@ -1,0 +1,63 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:unpowered_repeater",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "repeater_delay": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/unpowered_repeater.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      10294,
+      10298,
+      10302,
+      10306,
+      10297,
+      10301,
+      10305,
+      10309,
+      10296,
+      10300,
+      10304,
+      10308,
+      10295,
+      10299,
+      10303,
+      10307
+    ]
+  }
+}

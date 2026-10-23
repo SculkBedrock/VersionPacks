@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:waxed_exposed_copper_grate",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

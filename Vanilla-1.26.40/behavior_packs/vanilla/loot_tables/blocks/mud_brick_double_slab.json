@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:mud_brick_slab",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

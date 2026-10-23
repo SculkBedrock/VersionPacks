@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:cherry_shelf",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "powered_bit": [
+          false,
+          true
+        ],
+        "powered_shelf_type": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 2.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 2.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/cherry_shelf.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      14550,
+      14554,
+      14558,
+      14562,
+      14566,
+      14570,
+      14574,
+      14578,
+      14553,
+      14557,
+      14561,
+      14565,
+      14569,
+      14573,
+      14577,
+      14581,
+      14552,
+      14556,
+      14560,
+      14564,
+      14568,
+      14572,
+      14576,
+      14580,
+      14551,
+      14555,
+      14559,
+      14563,
+      14567,
+      14571,
+      14575,
+      14579
+    ]
+  }
+}

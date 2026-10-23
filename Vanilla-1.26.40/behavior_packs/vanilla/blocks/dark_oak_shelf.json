@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:dark_oak_shelf",
+      "default_states": {
+        "minecraft:cardinal_direction": [
+          "south",
+          "east",
+          "north",
+          "west"
+        ],
+        "powered_bit": [
+          false,
+          true
+        ],
+        "powered_shelf_type": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 2.0
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 2.0,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/dark_oak_shelf.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      9561,
+      9565,
+      9569,
+      9573,
+      9577,
+      9581,
+      9585,
+      9589,
+      9564,
+      9568,
+      9572,
+      9576,
+      9580,
+      9584,
+      9588,
+      9592,
+      9563,
+      9567,
+      9571,
+      9575,
+      9579,
+      9583,
+      9587,
+      9591,
+      9562,
+      9566,
+      9570,
+      9574,
+      9578,
+      9582,
+      9586,
+      9590
+    ]
+  }
+}

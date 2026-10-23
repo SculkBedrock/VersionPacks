@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potato",
+          "count": [
+            {
+              "value": 3,
+              "chance": 0.3417721518987342
+            },
+            {
+              "value": 4,
+              "chance": 0.45569620253164556
+            },
+            {
+              "value": 5,
+              "chance": 0.20253164556962025
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:poisonous_potato",
+          "chance": 0.2,
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

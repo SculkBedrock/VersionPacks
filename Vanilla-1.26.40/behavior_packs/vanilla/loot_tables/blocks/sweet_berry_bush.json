@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:sweet_berries",
+          "count": [
+            {
+              "value": 2,
+              "chance": 0.5
+            },
+            {
+              "value": 3,
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

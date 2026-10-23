@@ -1,0 +1,75 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:frame",
+      "default_states": {
+        "facing_direction": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "item_frame_map_bit": [
+          false,
+          true
+        ],
+        "item_frame_photo_bit": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.25
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.25,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/frame.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      6907,
+      6919,
+      6913,
+      6925,
+      6908,
+      6920,
+      6914,
+      6926,
+      6909,
+      6921,
+      6915,
+      6927,
+      6910,
+      6922,
+      6916,
+      6928,
+      6911,
+      6923,
+      6917,
+      6929,
+      6912,
+      6924,
+      6918,
+      6930
+    ]
+  }
+}

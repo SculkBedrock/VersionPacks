@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "minecraft:sniffer_egg",
+      "default_states": {
+        "cracked_state": [
+          "no_cracks",
+          "cracked",
+          "max_cracked"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "value": 0.5
+      },
+      "sc:mining": {
+        "formula_version": 1,
+        "base_time_seconds": 0.5,
+        "default": {
+          "can_mine": true,
+          "harvest": true,
+          "speed_multiplier": 1.0
+        },
+        "enchantments": {
+          "minecraft:efficiency": {
+            "max_level": 5
+          }
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/sniffer_egg.json"
+      }
+    },
+    "permutations": [],
+    "sc:protocol_runtime_ids": [
+      14166,
+      14167,
+      14168
+    ]
+  }
+}
